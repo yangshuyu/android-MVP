@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/rl_mol_header"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_128"
+        android:background="@color/abc_white">
+
+        <TextView
+            android:id="@+id/tv_mol_title"
+            android:layout_width="@dimen/dimen_226"
+            android:layout_height="@dimen/dimen_60"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/dimen_16"
+            android:layout_marginTop="@dimen/dimen_52"
+            android:gravity="center"
+            android:text="Mol"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/dimen_38" />
+
+        <RelativeLayout
+            android:id="@+id/rl_mol_back"
+            android:layout_width="@dimen/dimen_80"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/iv_set_back"
+                android:layout_width="@dimen/dimen_24"
+                android:layout_height="@dimen/dimen_42"
+                android:layout_marginBottom="@dimen/dimen_24"
+                android:layout_marginStart="@dimen/dimen_24"
+                android:layout_marginTop="@dimen/dimen_62"
+                android:background="@drawable/go_back" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <WebView
+        android:id="@+id/wv_mol"
+        android:layout_below="@+id/rl_mol_header"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></WebView>
+</RelativeLayout>

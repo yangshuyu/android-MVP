@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_buycoins_coins"
+        android:layout_width="@dimen/dimen_208"
+        android:layout_height="@dimen/dimen_70"
+        android:layout_marginBottom="@dimen/dimen_20"
+        android:layout_marginLeft="@dimen/dimen_12"
+        android:layout_marginRight="@dimen/dimen_12"
+        android:background="@drawable/selector_black_ff9200_bian">
+
+        <ImageView
+            android:id="@+id/iv_buycoins_jiao"
+            android:layout_width="@dimen/dimen_32"
+            android:layout_height="@dimen/dimen_32"
+            android:background="@drawable/buycoins_jiao"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+            <TextView
+                android:id="@+id/tv_buyconis_coins"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="1"
+                android:textColor="@drawable/selector_textcolor_tv_buyconis_coins"
+                android:textSize="@dimen/dimen_28" />
+
+            <TextView
+                android:id="@+id/tv_buyconis_free"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/tv_buyconis_coins"
+                android:gravity="center"
+                android:text=" + 1free"
+                android:textColor="@drawable/selector_textcolor_tv_buyconis_coins"
+                android:textSize="@dimen/dimen_28" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

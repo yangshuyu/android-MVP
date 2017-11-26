@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_10"
+        android:background="#f8f8f9">
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_me_ordernum"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_90"
+        android:layout_marginLeft="@dimen/dimen_24"
+        android:gravity="center_vertical"
+        android:text="Order Number:1000 0000 000 133"
+        android:textColor="#666666"
+        android:textSize="@dimen/dimen_30" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@+id/tv_me_ordernum"
+        android:layout_marginLeft="@dimen/dimen_24"
+        android:layout_marginRight="@dimen/dimen_24"
+        android:background="@color/bg_view"></View>
+
+    <RelativeLayout
+        android:id="@+id/rl_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_me_ordernum">
+
+        <RelativeLayout
+            android:id="@+id/rl_all"
+            android:layout_width="@dimen/dimen_160"
+            android:layout_height="@dimen/dimen_160"
+            android:layout_marginStart="@dimen/dimen_24"
+            android:layout_marginTop="@dimen/dimen_50"
+            android:background="@drawable/shape_rl_all"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/iv_lucky_icon"
+                android:layout_width="@dimen/dimen_130"
+                android:layout_height="@dimen/dimen_130"
+                android:layout_margin="@dimen/dimen_2"
+                android:background="@drawable/default_icon" />
+        </RelativeLayout>
+
+        <net.iwantbuyer.view.JustifyTextView
+            android:id="@+id/jtv_lucky_discribe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dimen_4"
+            android:layout_marginEnd="@dimen/dimen_24"
+            android:layout_marginStart="@dimen/dimen_30"
+            android:layout_marginTop="@dimen/dimen_54"
+            android:layout_toEndOf="@id/rl_all"
+            android:ellipsize="end"
+            android:maxEms="10"
+            android:maxLines="2"
+            android:text="Magic sound headphones second"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/dimen_28" />
+
+        <TextView
+            android:id="@+id/tv_issue"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dimen_36"
+            android:layout_below="@id/jtv_lucky_discribe"
+            android:layout_marginStart="@dimen/dimen_26"
+            android:layout_toEndOf="@+id/rl_all"
+            android:text="@string/Issue."
+            android:textColor="#666666"
+            android:textSize="@dimen/dimen_28" />
+
+        <TextView
+            android:id="@+id/tv_lucky_issue"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dimen_36"
+            android:layout_below="@id/jtv_lucky_discribe"
+            android:layout_toEndOf="@+id/tv_issue"
+            android:text="171754"
+            android:textColor="#666666"
+            android:textSize="@dimen/dimen_28" />
+
+        <TextView
+            android:id="@+id/tv_participation"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dimen_36"
+            android:layout_below="@id/tv_lucky_issue"
+            android:layout_marginStart="@dimen/dimen_26"
+            android:layout_toEndOf="@+id/rl_all"
+            android:text="@string/Myparticipat."
+            android:textColor="#666666"
+            android:textSize="@dimen/dimen_28" />
+
+        <TextView
+            android:id="@+id/tv_lucky_participation"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dimen_36"
+            android:layout_below="@id/tv_lucky_issue"
+            android:layout_toEndOf="@+id/tv_participation"
+            android:text="1"
+            android:textColor="#666666"
+            android:textSize="@dimen/dimen_28" />
+
+        <ImageView
+            android:id="@+id/iv_lucky_goview"
+            android:layout_width="@dimen/dimen_12"
+            android:layout_height="@dimen/dimen_22"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/tv_lucky_issue"
+            android:layout_marginEnd="@dimen/dimen_24"
+            android:layout_marginTop="@dimen/dimen_4"
+            android:background="@drawable/go_go"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/dimen_24" />
+
+        <TextView
+            android:id="@+id/tv_lucky_goview"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dimen_32"
+            android:layout_below="@+id/tv_lucky_issue"
+            android:layout_marginEnd="@dimen/dimen_8"
+            android:layout_toStartOf="@id/iv_lucky_goview"
+            android:text="@string/viewall"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/dimen_24" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_lucky_all"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_top"
+        android:layout_marginLeft="@dimen/dimen_24"
+        android:layout_marginRight="@dimen/dimen_24"
+        android:layout_marginTop="@dimen/dimen_24"
+        android:background="#faeeee">
+
+        <ImageView
+            android:id="@+id/iv_lucky"
+            android:layout_width="@dimen/dimen_110"
+            android:layout_height="@dimen/dimen_86"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/dimen_30"
+            android:layout_marginTop="@dimen/dimen_30"
+            android:background="@drawable/productdetail_lucky" />
+
+        <TextView
+            android:id="@+id/tv_winner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_30"
+            android:layout_marginTop="@dimen/dimen_30"
+            android:text="@string/Winner."
+            android:textColor="#999999"
+            android:textSize="@dimen/dimen_24" />
+
+        <TextView
+            android:id="@+id/tv_lucky_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_10"
+            android:layout_marginTop="@dimen/dimen_30"
+            android:layout_toRightOf="@+id/tv_winner"
+            android:text="yangshuyu"
+            android:textColor="#999999"
+            android:textSize="@dimen/dimen_24" />
+
+
+            <TextView
+                android:id="@+id/tv_lucky_he"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_winner"
+                android:layout_marginStart="@dimen/dimen_30"
+                android:layout_marginTop="@dimen/dimen_3"
+                android:background="#00ffffff"
+
+                android:text="@string/Myparticipat."
+                android:textColor="#999999"
+                android:textSize="@dimen/dimen_24" />
+
+            <TextView
+                android:layout_alignTop="@+id/tv_lucky_he"
+                android:id="@+id/tv_he_participation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dimen_10"
+                android:layout_toRightOf="@+id/tv_lucky_he"
+                android:text="yangshuyu"
+                android:textColor="#999999"
+                android:textSize="@dimen/dimen_24" />
+
+
+        <TextView
+            android:id="@+id/tv_luckynum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_lucky_he"
+            android:layout_marginBottom="@dimen/dimen_30"
+            android:layout_marginStart="@dimen/dimen_30"
+            android:layout_marginTop="@dimen/dimen_3"
+            android:text="@string/Luckynumber."
+            android:textColor="#999999"
+            android:textSize="@dimen/dimen_24" />
+
+        <TextView
+            android:id="@+id/tv_all_luckynum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_lucky_he"
+            android:layout_marginStart="@dimen/dimen_10"
+            android:layout_marginTop="@dimen/dimen_3"
+            android:layout_toRightOf="@+id/tv_luckynum"
+            android:text="yangshuyu"
+            android:textColor="#999999"
+            android:textSize="@dimen/dimen_24" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/iv_lucky_chi"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_8"
+        android:layout_below="@+id/rl_lucky_all"
+        android:layout_marginLeft="@dimen/dimen_24"
+        android:layout_marginRight="@dimen/dimen_24"
+        android:background="@drawable/productdetail_serrated" />
+
+    <RelativeLayout
+        android:id="@+id/rl_lucky_address"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_70"
+        android:layout_below="@+id/iv_lucky_chi"
+        android:layout_marginLeft="@dimen/dimen_24"
+        android:layout_marginRight="@dimen/dimen_24"
+        android:background="#ff4f3c">
+
+        <TextView
+            android:id="@+id/tv_lucky_go"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dimen_3"
+            android:layout_toLeftOf="@+id/iv_lucky_go"
+            android:text="@string/confirmshippingaddress"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/dimen_26" />
+
+        <ImageView
+            android:id="@+id/iv_lucky_go"
+            android:layout_width="@dimen/dimen_12"
+            android:layout_height="@dimen/dimen_22"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dimen_24"
+            android:background="@drawable/productdetail_go" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_25"
+        android:layout_below="@+id/rl_lucky_address"
+        android:background="#ffffff"></RelativeLayout>
+
+
+</RelativeLayout>

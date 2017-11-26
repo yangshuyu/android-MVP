@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/rounded_corners_background"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/tv_country_warn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_44"
+        android:layout_marginEnd="@dimen/dimen_44"
+        android:layout_marginTop="@dimen/dimen_50"
+        android:gravity="center"
+        android:text="Accounts are store specific. You may need a new account for North American Store. Proceed?"
+        android:textColor="#666666"
+        android:textSize="@dimen/dimen_30" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginTop="@dimen/dimen_50"
+        android:background="#d8d8d8"></View>
+
+    <LinearLayout
+        android:id="@+id/rl_insert_ok"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/tv_country_cancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:paddingBottom="@dimen/dimen_25"
+            android:paddingTop="@dimen/dimen_25"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/Cancel"
+            android:textColor="#ff9c06"
+            android:textSize="@dimen/dimen_34" />
+        <View
+            android:layout_width="1px"
+            android:background="@color/bg_view"
+            android:layout_height="@dimen/dimen_40"></View>
+
+        <TextView
+            android:id="@+id/tv_country_ok"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:paddingBottom="@dimen/dimen_25"
+            android:paddingTop="@dimen/dimen_25"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/OK"
+            android:textColor="#ff9c06"
+            android:textSize="@dimen/dimen_34" />
+    </LinearLayout>
+</LinearLayout>

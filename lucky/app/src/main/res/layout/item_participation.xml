@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/ll_participation"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_100"
+        android:layout_below="@+id/view_participation"
+        android:background="@drawable/shape_black_noradius">
+
+        <TextView
+            android:id="@+id/tv_participation_time"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="2016-08-12"
+            android:textColor="#666666"
+            android:textSize="@dimen/dimen_24" />
+
+        <View
+            android:layout_width="@dimen/dimen_2"
+            android:layout_height="match_parent"
+            android:background="@color/bg_view"></View>
+
+        <TextView
+            android:id="@+id/tv_participation_people"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="6894"
+            android:textColor="#666666"
+            android:textSize="@dimen/dimen_24" />
+
+        <View
+            android:layout_width="@dimen/dimen_2"
+            android:layout_height="match_parent"
+            android:background="@color/bg_view"></View>
+
+        <TextView
+            android:id="@+id/tv_participation_detail"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:text="@string/unFold"
+            android:textColor="@color/ff9c05"
+            android:textSize="@dimen/dimen_24" />
+    </LinearLayout>
+
+    <TextView
+
+        android:paddingBottom="@dimen/dimen_30"
+        android:paddingTop="@dimen/dimen_30"
+        android:paddingStart="@dimen/dimen_16"
+        android:paddingEnd="@dimen/dimen_16"
+        android:id="@+id/tv_participation_num"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_participation"
+        android:background="#f2f2f4"
+        android:textColor="#666666"
+        android:textSize="@dimen/dimen_22" />
+
+    <!--<View-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="@dimen/dimen_1"-->
+        <!--android:layout_below="@+id/tv_participation_num"-->
+        <!--android:background="@color/bg_view"></View>-->
+</RelativeLayout>

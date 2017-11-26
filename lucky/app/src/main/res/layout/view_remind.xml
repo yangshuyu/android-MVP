@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dimen_130"
+    android:background="#ffffff">
+
+    <ImageView
+        android:id="@+id/iv_remind"
+        android:layout_width="@dimen/dimen_80"
+        android:layout_height="@dimen/dimen_80"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/dimen_24"
+        android:background="@mipmap/ic_launcher" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_24"
+        android:layout_marginRight="@dimen/dimen_24"
+        android:layout_marginTop="@dimen/dimen_28"
+        android:layout_toRightOf="@+id/iv_remind"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:text="太平鸟官方旗舰店"
+        android:textColor="#999999"
+        android:textSize="@dimen/dimen_24" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_24"
+        android:layout_marginRight="@dimen/dimen_24"
+        android:layout_marginTop="@dimen/dimen_68"
+        android:layout_toRightOf="@+id/iv_remind"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:text="这个不可以便宜哦 亲"
+        android:textColor="#666666"
+        android:textSize="@dimen/dimen_28" />
+
+</RelativeLayout>

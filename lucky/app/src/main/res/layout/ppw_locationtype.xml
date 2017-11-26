@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/dimen_5"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_addaddress_home"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:paddingBottom="@dimen/dimen_22"
+        android:paddingTop="@dimen/dimen_30"
+        android:text="Home"
+        android:textSize="@dimen/dimen_36" />
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="1px"
+        android:background="#c7c7cd"></View>
+
+    <TextView
+        android:id="@+id/tv_addaddress_business"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:paddingBottom="@dimen/dimen_22"
+        android:paddingTop="@dimen/dimen_22"
+        android:text="Business"
+        android:textSize="@dimen/dimen_36" />
+</LinearLayout>

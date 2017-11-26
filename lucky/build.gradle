@@ -1,0 +1,53 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+    repositories {
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:2.1.2'
+        classpath 'com.neenbedankt.gradle.plugins:android-apt:1.8'
+
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+allprojects {
+    repositories {
+        jcenter()
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
+
+ext {
+    compileSdk = 24
+    minSdk = 16
+    targetSdk = 22
+    // 用了25.1.1发现专题界面的浮标按钮没有动画效果了。改回25.0.1
+    // support = "25.1.1"
+    support = "24.2.0"
+    buildTools = "25.0.2"
+
+    //各种依赖包
+    libRxjava = "io.reactivex:rxjava:1.1.0"
+    libRxAndroid = "io.reactivex:rxandroid:1.1.0"
+    libRetrofit = "com.squareup.retrofit2:retrofit:2.2.0"
+    libRetrofitGson = "com.squareup.retrofit2:converter-gson:2.2.0"
+    libRetrofitAdapter = "com.squareup.retrofit2:adapter-rxjava:2.2.0"
+    libOkhttpLog = "com.squareup.okhttp3:logging-interceptor:3.4.1"
+
+    libButterKnife = "com.jakewharton:butterknife:8.0.1"
+    libButterKnifeApt = "com.jakewharton:butterknife-compiler:8.0.1"
+
+    libDagger2 = "com.google.dagger:dagger:2.6"
+    libDagger2Apt = "com.google.dagger:dagger-compiler:2.6"
+
+    libLock = "com.auth0.android:lock:2.2.1"
+
+    libGlide = "com.github.bumptech.glide:glide:3.7.0"
+
+}

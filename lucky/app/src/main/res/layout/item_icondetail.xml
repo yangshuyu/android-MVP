@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_while"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_icondetail_from"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dimen_36"
+        android:layout_marginStart="@dimen/dimen_24"
+        android:layout_marginTop="@dimen/dimen_24"
+        android:text="Paypal Recharge"
+        android:textColor="#666666"
+        android:textSize="@dimen/dimen_26" />
+
+    <ImageView
+        android:id="@+id/iv_coindetail"
+        android:layout_width="@dimen/dimen_26"
+        android:layout_height="@dimen/dimen_26"
+        android:layout_below="@+id/tv_icondetail_from"
+        android:layout_marginStart="@dimen/dimen_24"
+        android:layout_marginTop="@dimen/dimen_8"
+        android:background="@drawable/productdetail_previous" />
+
+    <TextView
+        android:id="@+id/tv_coindetail_time"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dimen_30"
+        android:layout_below="@+id/tv_icondetail_from"
+        android:layout_marginStart="@dimen/dimen_8"
+        android:layout_marginTop="@dimen/dimen_8"
+        android:layout_toEndOf="@id/iv_coindetail"
+        android:text="2016-07-15 10:01:41"
+        android:textColor="#999999"
+        android:textSize="@dimen/dimen_24" />
+
+    <TextView
+        android:id="@+id/tv_ciondetail_many"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dimen_40"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="@dimen/dimen_24"
+        android:layout_marginTop="@dimen/dimen_40"
+        android:text="+50"
+        android:textColor="@drawable/selector_ff9c05_black"
+        android:textSize="@dimen/dimen_30" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_2"
+        android:layout_below="@+id/tv_coindetail_time"
+        android:layout_marginStart="@dimen/dimen_24"
+        android:layout_marginEnd="@dimen/dimen_24"
+        android:layout_marginTop="@dimen/dimen_24"
+        android:background="@color/bg_view"></View>
+</RelativeLayout>

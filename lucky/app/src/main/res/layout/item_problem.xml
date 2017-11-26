@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:background="#ffffff"
+        android:id="@+id/rl_problem"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_100">
+
+        <TextView
+            android:id="@+id/tv_problem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dimen_30"
+            android:background="#ffffff"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:layout_marginRight="@dimen/dimen_60"
+            android:maxLines="1"
+            android:text="1. Learn Anout Lucky buyer"
+            android:textColor="#333333"
+            android:textSize="@dimen/dimen_32" />
+
+        <ImageView
+            android:id="@+id/iv_problem"
+            android:layout_width="@dimen/dimen_22"
+            android:layout_height="@dimen/dimen_12"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dimen_30"
+            android:background="@drawable/buycoins_go" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_1"
+            android:layout_alignParentBottom="true"
+            android:background="@color/bg_view"></View>
+
+    </RelativeLayout>
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/tv_problem_discribe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_problem"
+        android:background="#f2f2f2"
+        android:paddingBottom="@dimen/dimen_20"
+        android:paddingLeft="@dimen/dimen_30"
+        android:paddingRight="@dimen/dimen_30"
+        android:paddingTop="@dimen/dimen_24"
+        android:text="You can check it from Me AND you will be notified by the push message if you are the winner."
+        android:textColor="#999999"
+        android:lineSpacingExtra="@dimen/dimen_5"
+        android:textSize="@dimen/dimen_28" />
+
+</RelativeLayout>

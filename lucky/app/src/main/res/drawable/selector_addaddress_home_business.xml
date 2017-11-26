@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_hovered="true" android:drawable="@drawable/dispatch_yellow"></item>
+<item android:state_hovered="false">
+    <shape android:shape="oval">
+        <size android:height="@dimen/dimen_20" android:width="@dimen/dimen_20"></size>
+        <solid android:color="#ffffff"></solid>
+        <stroke android:width="@dimen/dimen_1" android:color="@color/ff9c05"></stroke>
+    </shape>
+</item>
+</selector>

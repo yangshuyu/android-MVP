@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#F5F5F6"
+    android:id="@+id/rl_dispatch_choose"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/iv_dispatch_address"
+        android:layout_width="@dimen/dimen_18"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="@dimen/dimen_30"
+        android:layout_marginBottom="@dimen/dimen_30"
+        android:background="@drawable/dispatch_address"
+        android:layout_marginStart="@dimen/dimen_24"
+        android:layout_height="@dimen/dimen_26" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:textSize="@dimen/dimen_26"
+        android:textColor="@color/text_black"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@+id/iv_dispatch_address"
+        android:layout_marginStart="@dimen/dimen_18"
+        android:text="@string/Chooseaddress"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:layout_width="@dimen/dimen_12"
+        android:background="@drawable/go_go"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="@dimen/dimen_24"
+        android:layout_height="@dimen/dimen_22" />
+
+</RelativeLayout>

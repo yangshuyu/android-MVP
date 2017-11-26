@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:id="@+id/rl_notification_goset"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_60"
+        android:background="#fae4e4">
+
+        <TextView
+            android:id="@+id/tv_notification_warn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dimen_19"
+            android:text="@string/warnnotifi"
+            android:textColor="#96534d"
+            android:textSize="@dimen/dimen_22" />
+
+        <TextView
+            android:id="@+id/tv_notification_goset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dimen_6"
+            android:layout_toRightOf="@+id/tv_notification_warn"
+            android:text="nihao"
+            android:textColor="#86534d"
+            android:textSize="@dimen/dimen_22" />
+
+        <ImageView
+            android:id="@+id/tv_notification_close"
+            android:layout_width="@dimen/dimen_22"
+            android:layout_height="@dimen/dimen_22"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dimen_28"
+            android:background="@drawable/default_delete" />
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_notification"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"></android.support.v7.widget.RecyclerView>
+</LinearLayout>

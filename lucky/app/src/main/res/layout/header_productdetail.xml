@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="#EEEEEE"
+        android:layout_height="@dimen/dimen_20"></RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_100"
+        android:background="@color/bg_while">
+
+        <ImageView
+            android:layout_width="@dimen/dimen_24"
+            android:layout_height="@dimen/dimen_22"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/dimen_24"
+            android:background="@drawable/productdetail_previous_winners" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dimen_44"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/dimen_64"
+            android:text="@string/ParticipationRecord"
+            android:textColor="#666666"
+            android:textSize="@dimen/dimen_32" />
+
+        <ImageView
+            android:layout_width="@dimen/dimen_12"
+            android:layout_height="@dimen/dimen_22"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/dimen_24" />
+    </RelativeLayout>
+</LinearLayout>

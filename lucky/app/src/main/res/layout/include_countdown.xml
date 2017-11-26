@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dimen_112"
+    android:layout_marginBottom="@dimen/dimen_20"
+    android:layout_marginEnd="@dimen/dimen_24"
+    android:layout_marginStart="@dimen/dimen_24"
+    android:layout_marginTop="@dimen/dimen_40"
+    android:background="@color/ff9c05"
+    android:visibility="gone">
+
+    <TextView
+        android:id="@+id/tv_countdownissue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_20"
+        android:layout_marginTop="@dimen/dimen_16"
+        android:gravity="center"
+        android:text="@string/Issue."
+        android:textColor="@color/text_white"
+        android:textSize="@dimen/dimen_28" />
+
+    <TextView
+        android:id="@+id/tv_productdetail_countdownissue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_16"
+        android:layout_toEndOf="@+id/tv_countdownissue"
+        android:gravity="center"
+        android:text="2"
+        android:textColor="@color/text_white"
+        android:textSize="@dimen/dimen_28" />
+
+    <TextView
+        android:id="@+id/tv_productdetail_announced"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_20"
+        android:layout_marginTop="@dimen/dimen_61"
+        android:text="@string/Countdownannounced."
+        android:textColor="@color/text_white"
+        android:textSize="@dimen/dimen_28" />
+
+    <TextView
+        android:id="@+id/tv_countdown_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_55"
+        android:layout_toEndOf="@+id/tv_productdetail_announced"
+        android:text="0"
+        android:textColor="@color/text_white"
+        android:textSize="@dimen/dimen_36"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/tv_countdown_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_2"
+        android:layout_marginTop="@dimen/dimen_55"
+        android:layout_toEndOf="@+id/tv_countdown_1"
+        android:text="0"
+        android:textColor="@color/text_white"
+        android:textSize="@dimen/dimen_36"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:layout_width="@dimen/dimen_6"
+        android:layout_height="@dimen/dimen_20"
+        android:layout_alignTop="@id/tv_countdown_2"
+        android:layout_marginStart="@dimen/dimen_6"
+        android:layout_marginTop="@dimen/dimen_16"
+        android:layout_toEndOf="@+id/tv_countdown_2">
+
+        <ImageView
+            android:layout_width="@dimen/dimen_6"
+            android:layout_height="@dimen/dimen_6"
+            android:background="@drawable/shape_iv_all_time_whitepoint" />
+
+        <ImageView
+            android:layout_width="@dimen/dimen_6"
+            android:layout_height="@dimen/dimen_6"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/shape_iv_all_time_whitepoint" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_countdown_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_20"
+        android:layout_marginTop="@dimen/dimen_55"
+        android:layout_toEndOf="@+id/tv_countdown_2"
+        android:text="0"
+        android:textColor="@color/text_white"
+        android:textSize="@dimen/dimen_36"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/tv_countdown_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_3"
+        android:layout_marginTop="@dimen/dimen_55"
+        android:layout_toEndOf="@id/tv_countdown_3"
+        android:text="0"
+        android:textColor="@color/text_white"
+        android:textSize="@dimen/dimen_36"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:layout_width="@dimen/dimen_6"
+        android:layout_height="@dimen/dimen_20"
+        android:layout_alignTop="@id/tv_countdown_4"
+        android:layout_marginStart="@dimen/dimen_6"
+        android:layout_marginTop="@dimen/dimen_16"
+        android:layout_toEndOf="@+id/tv_countdown_4">
+
+        <ImageView
+            android:layout_width="@dimen/dimen_6"
+            android:layout_height="@dimen/dimen_6"
+            android:background="@drawable/shape_iv_all_time_whitepoint" />
+
+        <ImageView
+            android:layout_width="@dimen/dimen_6"
+            android:layout_height="@dimen/dimen_6"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/shape_iv_all_time_whitepoint" />
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/tv_countdown_5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_20"
+        android:layout_marginTop="@dimen/dimen_55"
+        android:layout_toEndOf="@id/tv_countdown_4"
+        android:text="0"
+        android:textColor="@color/text_white"
+        android:textSize="@dimen/dimen_36"
+        android:textStyle="bold"></TextView>
+
+
+    <TextView
+        android:id="@+id/tv_countdown_6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_3"
+        android:layout_marginTop="@dimen/dimen_55"
+        android:layout_toEndOf="@id/tv_countdown_5"
+        android:text="0"
+        android:textColor="@color/text_white"
+        android:textSize="@dimen/dimen_36"
+        android:textStyle="bold" />
+
+</RelativeLayout>

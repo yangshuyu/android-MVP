@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/rounded_corners_background"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/tv_insertcoins_lessicons_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_40"
+        android:gravity="center"
+        android:text="@string/Success"
+        android:textColor="@color/text_black"
+        android:textSize="@dimen/dimen_36" />
+
+    <TextView
+        android:id="@+id/jtv_insertcoins_lessicons_discribe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_44"
+        android:gravity="center"
+        android:layout_marginEnd="@dimen/dimen_44"
+        android:layout_marginTop="@dimen/dimen_30"
+        android:text="@string/Successtext"
+        android:textColor="#999999"
+        android:textSize="@dimen/dimen_30" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginTop="@dimen/dimen_30"
+        android:background="#d8d8d8"></View>
+
+
+    <TextView
+        android:id="@+id/tv_buycoins_success"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_75"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="@dimen/dimen_25"
+        android:gravity="center"
+        android:text="@string/Done"
+        android:textColor="#ff9c06"
+        android:textSize="@dimen/dimen_34" />
+</LinearLayout>

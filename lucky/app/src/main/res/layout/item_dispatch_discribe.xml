@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_dispatch_adddiscribe"
+        android:layout_marginStart="@dimen/dimen_24"
+        android:layout_marginTop="@dimen/dimen_36"
+        android:text="@string/Ordertracking"
+        android:layout_marginBottom="@dimen/dimen_30"
+        android:textColor="@color/text_black"
+        android:textSize="@dimen/dimen_28" />
+</LinearLayout>

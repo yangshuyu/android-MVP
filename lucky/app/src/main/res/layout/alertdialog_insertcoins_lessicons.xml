@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/rounded_corners_background"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/tv_insertcoins_lessicons_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_40"
+        android:gravity="center"
+        android:text="@string/Insufficientfunds"
+        android:textColor="@color/text_black"
+        android:textSize="@dimen/dimen_36" />
+
+    <net.iwantbuyer.view.JustifyTextView
+        android:id="@+id/jtv_insertcoins_lessicons_discribe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_44"
+        android:layout_marginEnd="@dimen/dimen_44"
+        android:layout_marginTop="@dimen/dimen_30"
+        android:text="@string/Insufficientfundstext"
+        android:textColor="#999999"
+        android:textSize="@dimen/dimen_30" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginTop="@dimen/dimen_30"
+        android:background="#d8d8d8"></View>
+
+    <LinearLayout
+        android:id="@+id/rl_insert_ok"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/tv_lessicons_cancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="@dimen/dimen_25"
+            android:layout_marginTop="@dimen/dimen_25"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/Cancel"
+            android:textColor="#ff9c06"
+            android:textSize="@dimen/dimen_34" />
+
+        <TextView
+            android:id="@+id/tv_lessicons_ok"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="@dimen/dimen_25"
+            android:layout_marginTop="@dimen/dimen_25"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/OK"
+            android:textColor="#ff9c06"
+            android:textSize="@dimen/dimen_34" />
+    </LinearLayout>
+</LinearLayout>

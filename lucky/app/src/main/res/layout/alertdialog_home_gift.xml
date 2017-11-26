@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00FFFFFF"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="@dimen/dimen_660"
+        android:layout_height="@dimen/dimen_711"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dimen_20"
+        android:background="@drawable/home_gift" />
+
+    <ImageView
+        android:id="@+id/iv_home_gift"
+        android:layout_width="@dimen/dimen_660"
+        android:layout_height="@dimen/dimen_711"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dimen_20"
+        android:background="@drawable/home_gift_get_en" />
+
+    <ImageView
+        android:id="@+id/iv_home_get"
+        android:layout_width="@dimen/dimen_360"
+        android:layout_height="@dimen/dimen_80"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dimen_660" />
+
+    <ImageView
+        android:id="@+id/iv_gift_close"
+        android:layout_width="@dimen/dimen_52"
+        android:layout_height="@dimen/dimen_52"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/dimen_30"
+        android:layout_marginTop="@dimen/dimen_20" />
+
+</RelativeLayout>

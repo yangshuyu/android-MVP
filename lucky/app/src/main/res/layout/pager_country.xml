@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#f9f9f9"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/rl_country_header"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_128"
+        android:background="@drawable/shape_header">
+
+        <TextView
+            android:id="@+id/tv_set_title"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dimen_60"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/dimen_16"
+            android:layout_marginTop="@dimen/dimen_52"
+            android:gravity="center"
+            android:text="@string/SelectCountry"
+            android:textColor="@color/text_white"
+            android:textSize="@dimen/dimen_38" />
+
+        <RelativeLayout
+            android:id="@+id/rl_country_back"
+            android:layout_width="@dimen/dimen_80"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/iv_set_back"
+                android:layout_width="@dimen/dimen_24"
+                android:layout_height="@dimen/dimen_42"
+                android:layout_marginBottom="@dimen/dimen_24"
+                android:layout_marginStart="@dimen/dimen_24"
+                android:layout_marginTop="@dimen/dimen_62"
+                android:background="@drawable/go_back" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_country_apply"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginEnd="@dimen/dimen_24"
+            android:layout_marginTop="@dimen/dimen_57"
+            android:gravity="center"
+            android:paddingBottom="@dimen/dimen_24"
+            android:text="@string/Apply"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/dimen_32" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="3px"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/default_shadow_top" />
+    </RelativeLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_below="@+id/rl_country_header"
+        android:id="@+id/rv_country"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></android.support.v7.widget.RecyclerView>
+
+
+    <!--<RelativeLayout-->
+        <!--android:visibility="gone"-->
+        <!--android:layout_below="@+id/rv_country"-->
+        <!--android:layout_marginTop="@dimen/dimen_60"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="@dimen/dimen_40">-->
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:textColor="#999999"-->
+            <!--android:layout_centerInParent="true"-->
+            <!--android:drawableLeft="@drawable/country_warn"-->
+            <!--android:drawablePadding="@dimen/dimen_24"-->
+            <!--android:text="@string/oneaccountonecountry"-->
+            <!--android:textSize="@dimen/dimen_24"-->
+            <!--android:layout_height="wrap_content" />-->
+    <!--</RelativeLayout>-->
+    <RelativeLayout
+        android:id="@+id/rl_country_tab"
+        android:background="#000000"
+        android:visibility="gone"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:id="@+id/rl_keepout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rl_home_header"
+        android:layout_marginTop="@dimen/dimen_128"
+        android:background="@color/f2f2f2">
+
+        <RelativeLayout
+            android:id="@+id/rl_loading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+            <ProgressBar
+                android:id="@+id/pb_loading"
+                android:layout_width="@dimen/dimen_60"
+                android:layout_height="@dimen/dimen_60"
+                android:indeterminateDrawable="@drawable/shape_loading" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/dimen_8"
+                android:layout_toEndOf="@+id/pb_loading"
+                android:text="@string/loading..."
+                android:textColor="#000000"
+                android:textSize="@dimen/dimen_32" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_neterror"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dimen_120"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/iv_neterror"
+                android:layout_width="@dimen/dimen_400"
+                android:layout_height="@dimen/dimen_420"
+                android:background="@drawable/default_neterror" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_neterror"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/dimen_16"
+                android:text="@string/Networkfailure"
+                android:textColor="#acabb4"
+                android:textSize="@dimen/dimen_28" />
+
+            <TextView
+                android:id="@+id/tv_net_again"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_neterror"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/dimen_80"
+                android:background="@drawable/shape_radius_4pxoragne"
+                android:paddingBottom="@dimen/dimen_12"
+                android:paddingStart="@dimen/dimen_24"
+                android:paddingEnd="@dimen/dimen_24"
+                android:paddingTop="@dimen/dimen_12"
+                android:text="@string/retry"
+                android:textColor="@color/text_white"
+                android:textSize="@dimen/dimen_32" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/rl_nodata"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dimen_180"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/iv_nodata"
+                android:layout_width="@dimen/dimen_250"
+                android:layout_height="@dimen/dimen_300"
+                android:layout_marginStart="@dimen/dimen_40"
+                android:background="@drawable/default_nodata" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_nodata"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/dimen_16"
+                android:text="@string/Nodata"
+                android:textColor="#acabb4"
+                android:textSize="@dimen/dimen_28" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="abc_red">#FF0000</color>
+    <color name="abc_yellow">#FFFF00</color>
+    <color name="abc_blue">#0000FF</color>
+    <color name="abc_green">#00FF00</color>
+    <color name="abc_white">#FFFFFF</color>
+    <color name="abc_ziser">#A384EE</color>
+
+    <color name="bg_gray_low">#eeeeee</color>
+    <color name="bg_red">#d43e37</color>
+    <color name="bg_red_dark">#b61f1b</color>
+    <color name="bg_while">#FFFFFF</color>
+    <color name="bg_bangtouming">#8b8b87</color>
+    <color name="bg_gray">#e9e9e9</color>
+    <color name="bg_view">#e5e5e5</color>
+
+
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="text_blue">#2FB3FF</color>
+    <color name="text_gray">#999999</color>
+    <color name="text_black">#333333</color>
+    <color name="text_red">#e7331a</color>
+    <color name="text_white">#ffffff</color>
+    <color name="text_buy">#333333</color>
+    <color name="text_ccc">#cccccc</color>
+
+    <color name="bg_all">#F1F1F1</color>
+    <color name="bg_ff4f3c">#ff4f3c</color>
+
+    <color name="all_orange">#ff311a</color>
+    <color name="ff9c05">#ff9c05</color>
+    <color name="f2f2f2">#f2f2f2</color>
+    <color name="D12F1D">#D12F1D</color>
+    <color name="background">#ECEEF3</color>
+    <color name="centerblack">#666666</color>
+
+    <color name="auth0_header">#F0F0F0</color>
+    <color name="fcblue">#4967B4</color>
+    <color name="f8f8f8">#F8F8F8</color>
+    <color name="faeeee">#faeeee</color>
+    <color name="ff8080">#ff8080</color>
+    <color name="ff796b">#FF796B</color>
+</resources>

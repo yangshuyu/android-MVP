@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    tools:context="com.example.circleimageviewdemo_1.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_10"
+        android:background="#eeeeee" />
+
+    <TextView
+        android:id="@+id/tv_issu"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dimen_40"
+        android:layout_marginStart="@dimen/dimen_24"
+        android:layout_marginTop="@dimen/dimen_30"
+        android:gravity="center"
+        android:text="["
+        android:textColor="@color/text_black"
+        android:textSize="@dimen/dimen_26" />
+
+    <TextView
+        android:layout_toRightOf="@+id/tv_issu"
+        android:id="@+id/tv_issue"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dimen_40"
+        android:layout_marginTop="@dimen/dimen_30"
+        android:gravity="center"
+        android:text="@string/Issue."
+        android:textColor="@color/text_black"
+        android:textSize="@dimen/dimen_26" />
+    <TextView
+        android:id="@+id/tv_previous_issue"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dimen_40"
+        android:layout_toEndOf="@+id/tv_issue"
+        android:layout_marginTop="@dimen/dimen_30"
+        android:gravity="center"
+        android:text="3"
+        android:textColor="@color/text_black"
+        android:textSize="@dimen/dimen_26" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dimen_40"
+        android:layout_toEndOf="@+id/tv_previous_issue"
+        android:layout_marginTop="@dimen/dimen_30"
+        android:gravity="center"
+        android:text="]"
+        android:textColor="@color/text_black"
+        android:textSize="@dimen/dimen_26" />
+
+    <TextView
+        android:id="@+id/tv_previous_time"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dimen_40"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="@dimen/dimen_24"
+        android:layout_marginTop="@dimen/dimen_30"
+        android:gravity="center"
+        android:text="2016-10-10 09:53:52"
+        android:textColor="#999999"
+        android:textSize="@dimen/dimen_26" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginTop="@dimen/dimen_90"
+        android:background="@color/bg_view"></View>
+
+    <net.iwantbuyer.view.CircleImageView
+        android:id="@+id/civ_provious_icon"
+        android:layout_width="@dimen/dimen_55"
+        android:layout_height="@dimen/dimen_55"
+        android:layout_marginStart="@dimen/dimen_24"
+        android:layout_marginTop="@dimen/dimen_130"
+        android:src="@drawable/default_icon" />
+
+    <TextView
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:id="@+id/tv_previous_name"
+        android:layout_width="@dimen/dimen_80"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/civ_provious_icon"
+        android:layout_marginStart="@dimen/dimen_24"
+        android:layout_marginTop="@dimen/dimen_5"
+        android:text="杨树宇"
+        android:textColor="#666666"
+        android:textSize="@dimen/dimen_23" />
+
+    <TextView
+        android:id="@+id/tv_participation"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dimen_36"
+        android:layout_marginStart="@dimen/dimen_28"
+        android:layout_marginTop="@dimen/dimen_130"
+        android:layout_toEndOf="@id/civ_provious_icon"
+        android:text="@string/Numberofparticipants."
+        android:textColor="#666666"
+        android:textSize="@dimen/dimen_24" />
+
+    <TextView
+        android:id="@+id/tv_previous_participation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_130"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="@dimen/dimen_24"
+        android:text="159"
+        android:textColor="@color/ff9c05"
+        android:textSize="@dimen/dimen_24" />
+    <TextView
+        android:id="@+id/tv_luckynum"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dimen_36"
+        android:layout_below="@id/tv_participation"
+        android:layout_marginStart="@dimen/dimen_28"
+        android:layout_marginTop="@dimen/dimen_8"
+        android:layout_marginBottom="@dimen/dimen_20"
+        android:layout_toEndOf="@id/civ_provious_icon"
+        android:text="@string/Luckynumber."
+        android:textColor="#666666"
+        android:textSize="@dimen/dimen_24" />
+    <TextView
+        android:layout_marginEnd="@dimen/dimen_24"
+        android:id="@+id/tv_previous_luckynum"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dimen_36"
+        android:layout_below="@id/tv_participation"
+        android:layout_marginTop="@dimen/dimen_8"
+        android:layout_marginBottom="@dimen/dimen_20"
+        android:layout_alignParentEnd="true"
+        android:text="100050"
+        android:textColor="@color/ff9c05"
+        android:textSize="@dimen/dimen_24" />
+
+</RelativeLayout>

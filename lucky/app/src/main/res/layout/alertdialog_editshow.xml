@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_radius_4px"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_editshow_camera"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_110"
+            android:gravity="center"
+            android:text="@string/Camera"
+            android:textColor="#0076ff"
+            android:textSize="@dimen/dimen_32" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_2"
+            android:background="@color/bg_view"></View>
+        <TextView
+            android:id="@+id/tv_editshow_photo"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_110"
+            android:gravity="center"
+            android:text="@string/Photos"
+            android:textColor="#0076ff"
+            android:textSize="@dimen/dimen_32" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_10"
+        android:background="#00000000"></LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_editshow_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_110"
+        android:background="@drawable/shape_radius_4px"
+        android:gravity="center"
+        android:text="@string/Cancel"
+        android:textColor="#0076ff"
+        android:textSize="@dimen/dimen_32" />
+
+</LinearLayout>

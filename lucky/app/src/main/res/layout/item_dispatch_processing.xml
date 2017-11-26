@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tv_dispatch_processing"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dimen_36"
+        android:gravity="center_horizontal"
+        android:text="@string/WaitingforProcessing"
+        android:textColor="#cccccc"
+        android:textSize="@dimen/dimen_28" />
+
+    <TextView
+        android:layout_marginBottom="@dimen/dimen_32"
+        android:id="@+id/tv_dispach_processing_warn"
+        android:paddingRight="@dimen/dimen_24"
+        android:layout_marginTop="@dimen/dimen_12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_dispatch_processing"
+        android:text="@string/WaitingforProcessingwarn"
+        android:textColor="#cccccc"
+        android:textSize="@dimen/dimen_22" />
+</RelativeLayout>

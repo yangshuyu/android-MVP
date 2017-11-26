@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    
+    <ImageView
+        android:id="@+id/iv_winning"
+        android:layout_width="@dimen/dimen_602"
+        android:layout_height="@dimen/dimen_782"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/winning" />
+
+    <ImageView
+        android:background="@drawable/winning_delete"
+        android:id="@+id/iv_winning_close"
+        android:layout_width="@dimen/dimen_50"
+        android:layout_height="@dimen/dimen_50"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/dimen_16"
+        android:layout_marginTop="@dimen/dimen_35" />
+
+    <ImageView
+        android:layout_width="@dimen/dimen_216"
+        android:layout_height="@dimen/dimen_216"
+        android:layout_alignBottom="@+id/iv_winning"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/dimen_325"
+        android:background="@drawable/shape_yellow_six" />
+
+    <ImageView
+        android:id="@+id/iv_winning_icon"
+        android:layout_width="@dimen/dimen_205"
+        android:layout_height="@dimen/dimen_205"
+        android:layout_alignBottom="@+id/iv_winning"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/dimen_330"
+        android:background="#ffffff" />
+
+    <ImageView
+        android:id="@+id/iv_winning_win"
+        android:layout_width="@dimen/dimen_350"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/winning_zh"
+        android:layout_marginTop="@dimen/dimen_130"
+        android:layout_height="@dimen/dimen_48" />
+
+    <RelativeLayout
+        android:id="@+id/rl_winning"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/iv_winning"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/dimen_240">
+
+        <TextView
+            android:id="@+id/tv_winning_you"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/winning_you"
+            android:textColor="#ffffff" />
+
+        <TextView
+            android:id="@+id/tv_winning_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/dimen_28"
+            android:layout_marginLeft="@dimen/dimen_10"
+            android:layout_marginRight="@dimen/dimen_10"
+            android:layout_toRightOf="@+id/tv_winning_you"
+            android:text="1000"
+            android:textColor="#fefe00" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/tv_winning_code"
+            android:text="@string/winning_period"
+            android:textColor="#ffffff" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_below="@+id/iv_winning_win"
+        android:layout_marginTop="@dimen/dimen_370"
+        android:id="@+id/tv_winning_discribe"
+        android:layout_width="@dimen/dimen_550"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:ellipsize="end"
+        android:gravity="center_horizontal"
+        android:maxLines="2"
+        android:text="Apple phone 7 Unlocked Phone 128 GB - GSM Version (Black)"
+        android:textColor="#ffffff" />
+
+
+    <TextView
+        android:textColor="#9B4929"
+        android:textSize="@dimen/dimen_35"
+        android:layout_alignBottom="@+id/iv_winning"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:layout_marginBottom="@dimen/dimen_58"
+        android:layout_width="wrap_content"
+        android:text="@string/receive_now"
+        android:layout_height="wrap_content" />
+    
+    <ImageView
+        android:id="@+id/iv_winning_go"
+        android:layout_marginBottom="@dimen/dimen_40"
+        android:layout_alignBottom="@+id/iv_winning"
+        android:layout_centerHorizontal="true"
+        android:layout_width="@dimen/dimen_400"
+        android:layout_height="@dimen/dimen_80" />
+</RelativeLayout>

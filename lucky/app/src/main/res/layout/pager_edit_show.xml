@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+
+        android:id="@+id/rl_editshow_header"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_138"
+        android:background="@drawable/shape_header">
+
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/dimen_18"
+            android:layout_marginTop="@dimen/dimen_52"
+            android:gravity="center"
+            android:text="@string/EditShowPager"
+            android:textColor="@color/text_white"
+            android:textSize="@dimen/dimen_42" />
+
+
+        <TextView
+
+            android:id="@+id/tv_editshow_send"
+
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+
+            android:layout_alignParentEnd="true"
+
+            android:layout_centerHorizontal="true"
+
+            android:layout_marginEnd="@dimen/dimen_24"
+
+            android:layout_marginTop="@dimen/dimen_57"
+
+            android:gravity="center"
+
+            android:paddingBottom="@dimen/dimen_24"
+
+            android:text="@string/Send"
+
+            android:textColor="#ffffff"
+
+            android:textSize="@dimen/dimen_32" />
+
+
+        <LinearLayout
+            android:id="@+id/ll_editshow_back"
+            android:layout_width="@dimen/dimen_80"
+            android:layout_height="match_parent">
+
+
+            <ImageView
+
+                android:id="@+id/iv_show_back"
+
+                android:layout_width="@dimen/dimen_20"
+
+                android:layout_height="@dimen/dimen_36"
+
+                android:layout_marginBottom="@dimen/dimen_24"
+
+                android:layout_marginStart="@dimen/dimen_24"
+
+                android:layout_marginTop="@dimen/dimen_66"
+
+                android:background="@drawable/go_back" />
+
+
+        </LinearLayout>
+
+
+        <ImageView
+
+            android:layout_width="match_parent"
+
+            android:layout_height="3px"
+
+            android:layout_alignParentBottom="true"
+
+            android:background="@drawable/default_shadow_top"></ImageView>
+
+    </RelativeLayout>
+
+
+    <EditText
+        android:id="@+id/et_editshow_discribe"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_380"
+        android:layout_below="@+id/rl_editshow_header"
+        android:layout_marginTop="@dimen/dimen_20"
+        android:background="#ffffff"
+        android:gravity="left|top"
+        android:hint="@string/EditShowHint"
+        android:maxEms="320"
+        android:paddingLeft="@dimen/dimen_24"
+        android:paddingRight="@dimen/dimen_24"
+        android:textColor="#333333"
+        android:textSize="@dimen/dimen_28" />
+
+    <android.support.v7.widget.RecyclerView
+
+        android:id="@+id/rv_editshow_icon"
+
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+
+        android:layout_below="@+id/et_editshow_discribe"></android.support.v7.widget.RecyclerView>
+
+
+</RelativeLayout>

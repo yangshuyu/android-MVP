@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#ffffff"
+    android:visibility="gone"
+    android:layout_height="wrap_content">
+    <TextView
+
+        android:layout_marginTop="@dimen/dimen_30"
+        android:id="@+id/tv_mybuyparticipate"
+        android:layout_width="wrap_content"
+        android:textSize="@dimen/dimen_26"
+        android:textColor="#666666"
+        android:layout_marginStart="@dimen/dimen_20"
+        android:text="@string/Myparticipat."
+        android:layout_below="@id/rl"
+        android:layout_toEndOf="@id/civ_productdetail_lucky"
+        android:layout_height="@dimen/dimen_36" />
+    <TextView
+        android:layout_marginTop="@dimen/dimen_30"
+        android:id="@+id/tv_productdetail_mybuyparticipate"
+        android:layout_width="wrap_content"
+        android:textSize="@dimen/dimen_26"
+        android:textColor="#666666"
+        android:text="1"
+        android:layout_below="@id/rl"
+        android:layout_toEndOf="@id/tv_mybuyparticipate"
+        android:layout_height="@dimen/dimen_36" />
+
+    <TextView
+        android:id="@+id/tv_mybuynum"
+        android:layout_width="wrap_content"
+        android:textSize="@dimen/dimen_24"
+        android:textColor="#999999"
+        android:layout_marginStart="@dimen/dimen_20"
+        android:layout_marginTop="@dimen/dimen_8"
+        android:layout_marginEnd="@dimen/dimen_24"
+        android:text="@string/Participationnumbers."
+        android:layout_below="@id/tv_productdetail_mybuyparticipate"
+        android:layout_toEndOf="@id/civ_productdetail_lucky"
+        android:maxLines="3"
+        android:ellipsize="end"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/tv_productdetail_mybuynum"
+        android:layout_width="wrap_content"
+        android:textSize="@dimen/dimen_24"
+        android:textColor="#999999"
+        android:layout_marginStart="@dimen/dimen_20"
+        android:layout_marginTop="@dimen/dimen_8"
+        android:layout_marginEnd="@dimen/dimen_24"
+        android:layout_marginBottom="@dimen/dimen_40"
+        android:text="109653049   109653049 109653049 109653049 109653049 109653049"
+        android:layout_below="@id/tv_mybuynum"
+        android:layout_toEndOf="@id/civ_productdetail_lucky"
+        android:maxLines="3"
+        android:ellipsize="end"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/tv_mybuyparticipate"
+        android:id="@+id/rl_productdetail_participation_me"
+        android:layout_width="@dimen/dimen_250"
+        android:layout_marginEnd="@dimen/dimen_26"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/iv_productdetail_mybuygo"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="@dimen/dimen_24"
+            android:layout_marginTop="@dimen/dimen_12"
+            android:layout_width="@dimen/dimen_12"
+            android:background="@drawable/go_go"
+            android:layout_height="@dimen/dimen_22" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:textSize="@dimen/dimen_24"
+            android:textColor="@color/text_black"
+            android:text="@string/viewall"
+            android:layout_marginTop="@dimen/dimen_8"
+            android:layout_marginEnd="@dimen/dimen_8"
+            android:layout_toStartOf="@+id/iv_productdetail_mybuygo"
+            android:layout_marginBottom="@dimen/dimen_30"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+</RelativeLayout>

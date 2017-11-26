@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dimen_100"
+    android:background="@color/bg_while"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="@dimen/dimen_24"
+        android:background="@color/bg_view"></View>
+    <net.iwantbuyer.view.RoundCornerImageView
+        android:id="@+id/civ_productdetail"
+        android:layout_width="@dimen/dimen_40"
+        android:layout_height="@dimen/dimen_40"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="@dimen/dimen_20"
+        android:layout_marginBottom="@dimen/dimen_22"
+        android:layout_marginStart="@dimen/dimen_24"
+        android:src="@drawable/default_icon" />
+
+    <TextView
+        android:id="@+id/tv_productdetail_name"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dimen_36"
+        android:layout_marginStart="@dimen/dimen_20"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@+id/civ_productdetail"
+        android:text="Type something"
+        android:textColor="#666666"
+        android:textSize="@dimen/dimen_24" />
+
+    <TextView
+        android:id="@+id/tv_productdetail_time"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dimen_32"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="@dimen/dimen_24"
+        android:layout_centerVertical="true"
+        android:text="2016-08-01 19:36"
+        android:textColor="#999999"
+        android:textSize="@dimen/dimen_22" />
+
+    <TextView
+        android:id="@+id/tv_winnermoney"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dimen_36"
+        android:layout_toStartOf="@+id/tv_productdetail_time"
+        android:layout_marginEnd="@dimen/dimen_60"
+        android:layout_centerVertical="true"
+        android:text="@string/coins"
+        android:textColor="#ec5330"
+        android:textSize="@dimen/dimen_24" />
+
+    <TextView
+        android:id="@+id/tv_productdetail_winnermoney"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dimen_36"
+        android:layout_toStartOf="@+id/tv_winnermoney"
+        android:layout_centerVertical="true"
+        android:text="15"
+        android:textColor="#ec5330"
+        android:textSize="@dimen/dimen_24" />
+
+</RelativeLayout>

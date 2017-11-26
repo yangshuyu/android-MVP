@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_delivered"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <TextView
+        android:id="@+id/tv_dispatch_delivered"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dimen_36"
+        android:layout_toEndOf="@+id/iv_disaptch_delivered"
+        android:gravity="center_horizontal"
+        android:text="@string/Confirmdelivery"
+        android:layout_marginBottom="@dimen/dimen_55"
+        android:textColor="#cccccc"
+        android:textSize="@dimen/dimen_28" />
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/tv_dispatch_confirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="@dimen/dimen_24"
+        android:background="@color/bg_ff4f3c"
+        android:paddingBottom="@dimen/dimen_8"
+        android:paddingEnd="@dimen/dimen_20"
+        android:paddingStart="@dimen/dimen_20"
+        android:paddingTop="@dimen/dimen_8"
+        android:text="@string/Confirm"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/dimen_30"/>
+</RelativeLayout>
+
+

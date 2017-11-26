@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_10"
+        android:background="#f8f8f9">
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_me_ordernum"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_90"
+        android:layout_marginLeft="@dimen/dimen_24"
+        android:gravity="center_vertical"
+        android:text="Order Number:1000 0000 000 133"
+        android:textColor="#666666"
+        android:textSize="@dimen/dimen_30" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@+id/tv_me_ordernum"
+        android:layout_marginLeft="@dimen/dimen_24"
+        android:layout_marginRight="@dimen/dimen_24"
+        android:background="@color/bg_view"></View>
+
+    <RelativeLayout
+        android:id="@+id/rl_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_me_ordernum">
+
+        <RelativeLayout
+            android:id="@+id/rl_all"
+            android:layout_width="@dimen/dimen_160"
+            android:layout_height="@dimen/dimen_160"
+            android:layout_marginStart="@dimen/dimen_24"
+            android:layout_marginTop="@dimen/dimen_50"
+            android:background="@drawable/shape_rl_all"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/iv_countdown_icon"
+                android:layout_width="@dimen/dimen_130"
+                android:layout_height="@dimen/dimen_130"
+                android:background="@drawable/default_icon" />
+        </RelativeLayout>
+
+        <net.iwantbuyer.view.JustifyTextView
+            android:id="@+id/jtv_countdown_discribe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/dimen_24"
+            android:layout_marginStart="@dimen/dimen_30"
+            android:layout_marginTop="@dimen/dimen_54"
+            android:layout_toEndOf="@id/rl_all"
+            android:ellipsize="end"
+            android:maxEms="10"
+            android:maxLines="2"
+            android:text="Magic sound headphones second"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/dimen_28" />
+
+        <TextView
+            android:id="@+id/tv_issue"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dimen_38"
+            android:layout_below="@id/jtv_countdown_discribe"
+            android:layout_marginBottom="@dimen/dimen_4"
+            android:layout_marginStart="@dimen/dimen_30"
+            android:layout_toEndOf="@+id/rl_all"
+            android:text="@string/Issue."
+            android:textColor="#666666"
+            android:textSize="@dimen/dimen_28" />
+
+        <TextView
+            android:id="@+id/tv_countdown_issue"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dimen_38"
+            android:layout_below="@id/jtv_countdown_discribe"
+            android:layout_toEndOf="@+id/tv_issue"
+            android:text="171754"
+            android:textColor="#666666"
+            android:textSize="@dimen/dimen_28" />
+
+        <TextView
+            android:id="@+id/tv_participation"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dimen_38"
+            android:layout_below="@id/tv_countdown_issue"
+            android:layout_marginStart="@dimen/dimen_30"
+            android:layout_toEndOf="@+id/rl_all"
+            android:text="@string/Myparticipat."
+            android:textColor="#666666"
+            android:textSize="@dimen/dimen_28" />
+
+        <TextView
+            android:id="@+id/tv_countdown_participation"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dimen_38"
+            android:layout_below="@id/tv_countdown_issue"
+            android:layout_toEndOf="@+id/tv_participation"
+            android:text="1"
+            android:textColor="#666666"
+            android:textSize="@dimen/dimen_28" />
+
+        <ImageView
+            android:id="@+id/iv_countdown_goview"
+            android:layout_width="@dimen/dimen_12"
+            android:layout_height="@dimen/dimen_22"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/tv_countdown_issue"
+            android:layout_marginEnd="@dimen/dimen_24"
+            android:layout_marginTop="@dimen/dimen_4"
+            android:background="@drawable/go_go"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/dimen_24" />
+
+        <TextView
+            android:id="@+id/tv_countdown_goview"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dimen_32"
+            android:layout_below="@+id/tv_countdown_issue"
+            android:layout_marginEnd="@dimen/dimen_8"
+            android:layout_toStartOf="@id/iv_countdown_goview"
+            android:text="@string/viewall"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/dimen_24" />
+    </RelativeLayout>
+
+    <!--倒计时-->
+    <RelativeLayout
+        android:id="@+id/rl_productdetail_countdown"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_72"
+        android:layout_below="@id/rl_top"
+        android:layout_marginEnd="@dimen/dimen_24"
+        android:layout_marginStart="@dimen/dimen_24"
+        android:layout_marginTop="@dimen/dimen_30"
+        android:background="@color/ff9c05">
+
+
+        <TextView
+            android:id="@+id/tv_productdetail_announced"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/dimen_20"
+            android:text="@string/Countdownannounced."
+            android:textColor="@color/text_white"
+            android:textSize="@dimen/dimen_28" />
+
+        <TextView
+            android:id="@+id/tv_countdown_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/tv_productdetail_announced"
+            android:text="0"
+            android:textColor="@color/text_white"
+            android:textSize="@dimen/dimen_36"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/tv_countdown_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_2"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/tv_countdown_1"
+            android:text="0"
+            android:textColor="@color/text_white"
+            android:textSize="@dimen/dimen_36"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:layout_width="@dimen/dimen_6"
+            android:layout_height="@dimen/dimen_20"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/dimen_6"
+            android:layout_toEndOf="@+id/tv_countdown_2">
+
+            <ImageView
+                android:layout_width="@dimen/dimen_6"
+                android:layout_height="@dimen/dimen_6"
+                android:background="@drawable/shape_iv_all_time_whitepoint" />
+
+            <ImageView
+                android:layout_width="@dimen/dimen_6"
+                android:layout_height="@dimen/dimen_6"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/shape_iv_all_time_whitepoint" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_countdown_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_20"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/tv_countdown_2"
+            android:text="0"
+            android:textColor="@color/text_white"
+            android:textSize="@dimen/dimen_36"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/tv_countdown_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_3"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@id/tv_countdown_3"
+            android:text="0"
+            android:textColor="@color/text_white"
+            android:textSize="@dimen/dimen_36"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:layout_width="@dimen/dimen_6"
+            android:layout_height="@dimen/dimen_20"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/dimen_6"
+            android:layout_toEndOf="@+id/tv_countdown_4">
+
+            <ImageView
+                android:layout_width="@dimen/dimen_6"
+                android:layout_height="@dimen/dimen_6"
+                android:background="@drawable/shape_iv_all_time_whitepoint" />
+
+            <ImageView
+                android:layout_width="@dimen/dimen_6"
+                android:layout_height="@dimen/dimen_6"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/shape_iv_all_time_whitepoint" />
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/tv_countdown_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_20"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@id/tv_countdown_4"
+            android:text="0"
+            android:textColor="@color/text_white"
+            android:textSize="@dimen/dimen_36"
+            android:textStyle="bold"></TextView>
+
+
+        <TextView
+            android:id="@+id/tv_countdown_6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_3"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@id/tv_countdown_5"
+            android:text="0"
+            android:textColor="@color/text_white"
+            android:textSize="@dimen/dimen_36"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_below="@+id/rl_productdetail_countdown"
+        android:layout_height="@dimen/dimen_40"></RelativeLayout>
+
+</RelativeLayout>

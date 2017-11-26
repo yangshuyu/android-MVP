@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_editshow_one"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <net.iwantbuyer.view.RoundCornerImageView
+        android:layout_marginLeft="@dimen/dimen_24"
+        android:id="@+id/iv_editshow_icon"
+        android:layout_width="@dimen/dimen_170"
+        android:layout_height="@dimen/dimen_170"
+        android:layout_marginTop="@dimen/dimen_27"
+        android:background="@drawable/editshow_add" />
+
+    <ImageView
+        android:id="@+id/iv_editview_delete"
+        android:layout_width="@dimen/dimen_30"
+        android:layout_height="@dimen/dimen_30"
+        android:layout_alignTop="@+id/iv_editshow_icon"
+        android:layout_marginLeft="-7dp"
+        android:layout_marginTop="-7dp"
+        android:layout_toRightOf="@id/iv_editshow_icon"
+        android:background="@drawable/editshow_delete" />
+</RelativeLayout>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff">
+
+    <RelativeLayout
+        android:id="@+id/rl_disaptch_address"
+        android:layout_width="match_parent"
+        android:background="#F5F5F6"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_disaptch_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_24"
+            android:layout_marginTop="@dimen/dimen_24"
+            android:text="name"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/dimen_26" />
+
+        <TextView
+            android:id="@+id/tv_disaptch_telnum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="@dimen/dimen_60"
+            android:layout_marginTop="@dimen/dimen_28"
+            android:text="name"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/dimen_26" />
+
+        <TextView
+            android:id="@+id/tv_disaptch_add_detailed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_disaptch_name"
+            android:layout_marginBottom="@dimen/dimen_20"
+            android:layout_marginStart="@dimen/dimen_24"
+            android:layout_marginEnd="@dimen/dimen_60"
+            android:layout_marginTop="@dimen/dimen_20"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:text="Rm.1902, Unit2, Bldg.2, Hehong Yangguang Community Crossing of Nanxin Rd"
+            android:textColor="#333333"
+            android:textSize="@dimen/dimen_26" />
+        <ImageView
+            android:id="@+id/iv_dispatch_go"
+            android:layout_marginRight="@dimen/dimen_20"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/dimen_25"
+            android:layout_width="@dimen/dimen_12"
+            android:layout_below="@+id/tv_disaptch_name"
+            android:background="@drawable/go_go"
+            android:layout_height="@dimen/dimen_22" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/iv_envelope"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_12"
+        android:layout_below="@+id/rl_disaptch_address"
+        android:background="@drawable/dispatch_envelope" />
+
+    <RelativeLayout
+        android:layout_below="@+id/iv_envelope"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_18"></RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rl_dispatch_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_18"
+        android:layout_below="@+id/iv_envelope"
+        android:background="#ffffff">
+
+        <TextView
+            android:id="@+id/tv_dispatch_submit"
+            android:layout_width="@dimen/dimen_125"
+            android:layout_height="@dimen/dimen_60"
+            android:layout_alignParentEnd="true"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="@dimen/dimen_15"
+            android:layout_marginRight="@dimen/dimen_24"
+            android:background="@drawable/shape_red_radius"
+            android:gravity="center"
+            android:paddingBottom="@dimen/dimen_6"
+            android:paddingEnd="@dimen/dimen_8"
+            android:paddingStart="@dimen/dimen_8"
+            android:paddingTop="@dimen/dimen_6"
+            android:text="@string/Submit"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/dimen_28" />
+    </RelativeLayout>
+
+
+    <!--<RelativeLayout-->
+        <!--android:layout_marginBottom="@dimen/dimen_15"-->
+        <!--android:id="@+id/rl_dispatch_selector_address"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@+id/rl"-->
+        <!--android:background="@color/bg_while"-->
+        <!--android:layout_marginTop="@dimen/dimen_12">-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/tv_dispatch_selector_address"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:background="@drawable/shape_666666_border"-->
+            <!--android:paddingBottom="@dimen/dimen_6"-->
+            <!--android:paddingStart="@dimen/dimen_8"-->
+            <!--android:paddingEnd="@dimen/dimen_8"-->
+            <!--android:paddingTop="@dimen/dimen_6"-->
+            <!--android:textColor="@color/all_orange"-->
+            <!--android:text="@string/Alternativeaddress"-->
+            <!--android:textSize="@dimen/dimen_22" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/tv_dispatch_current_address"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentEnd="true"-->
+            <!--android:background="@drawable/shape_red_radius"-->
+            <!--android:paddingBottom="@dimen/dimen_6"-->
+            <!--android:paddingStart="@dimen/dimen_8"-->
+            <!--android:paddingEnd="@dimen/dimen_8"-->
+            <!--android:paddingTop="@dimen/dimen_6"-->
+            <!--android:text="@string/Currentaddress"-->
+            <!--android:textColor="#ffffff"-->
+            <!--android:textSize="@dimen/dimen_22" />-->
+    <!--</RelativeLayout>-->
+</RelativeLayout>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@+id/fl_main"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="3px"
+            android:background="@drawable/default_shadow_top" />
+
+        <RadioGroup
+            android:id="@+id/rg_main"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_98"
+            android:layout_alignParentBottom="true"
+            android:background="#eeffffff"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rb_main_homepager"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawablePadding="@dimen/dimen_2"
+                android:drawableTop="@drawable/selector_home"
+                android:gravity="center"
+                android:paddingTop="@dimen/dimen_8"
+                android:text="@string/Home"
+                android:textColor="@drawable/selector_999999_ff311a"
+                android:textSize="@dimen/dimen_20" />
+
+            <RadioButton
+                android:id="@+id/rb_main_buycoins"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawablePadding="@dimen/dimen_2"
+                android:drawableTop="@drawable/selector_buycoins"
+                android:gravity="center"
+                android:paddingTop="@dimen/dimen_8"
+                android:text="@string/BuyCoins"
+                android:textColor="@drawable/selector_999999_ff311a"
+                android:textSize="@dimen/dimen_20" />
+
+            <RadioButton
+                android:id="@+id/rb_main_newresult"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawablePadding="@dimen/dimen_2"
+                android:drawableTop="@drawable/selector__newresult"
+                android:gravity="center"
+                android:paddingTop="@dimen/dimen_8"
+                android:text="@string/NewResult"
+                android:textColor="@drawable/selector_999999_ff311a"
+                android:textSize="@dimen/dimen_20" />
+
+            <RadioButton
+                android:id="@+id/rb_main_show"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawablePadding="@dimen/dimen_2"
+                android:drawableTop="@drawable/selector_show"
+                android:gravity="center"
+                android:paddingTop="@dimen/dimen_8"
+                android:text="@string/Show"
+                android:textColor="@drawable/selector_999999_ff311a"
+                android:textSize="@dimen/dimen_20" />
+
+            <RadioButton
+                android:id="@+id/rb_main_me"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawablePadding="@dimen/dimen_2"
+                android:drawableTop="@drawable/selector_me"
+                android:gravity="center"
+                android:paddingTop="@dimen/dimen_8"
+                android:text="@string/MyAccount"
+                android:textColor="@drawable/selector_999999_ff311a"
+                android:textSize="@dimen/dimen_20" />
+        </RadioGroup>
+
+        <RelativeLayout
+            android:id="@+id/rl_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#000000"></RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

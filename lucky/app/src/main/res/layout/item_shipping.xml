@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_28"
+        android:background="#eeeeee"></RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_shipping_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_24"
+        android:layout_marginTop="@dimen/dimen_56"
+        android:text="name"
+        android:textColor="@color/text_black"
+        android:textSize="@dimen/dimen_32" />
+
+
+    <TextView
+        android:id="@+id/tv_shipping_telnum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="@dimen/dimen_24"
+        android:layout_marginTop="@dimen/dimen_66"
+        android:text="13699140938"
+        android:textColor="@color/text_black"
+        android:textSize="@dimen/dimen_32" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_2"
+        android:layout_below="@+id/tv_shipping_telnum"
+        android:layout_marginStart="@dimen/dimen_24"
+        android:layout_marginEnd="@dimen/dimen_24"
+        android:layout_marginTop="@dimen/dimen_20"
+        android:background="@color/bg_view"></View>
+
+    <net.iwantbuyer.view.JustifyTextView
+        android:id="@+id/jtv_shipping_detailed"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_64"
+        android:layout_below="@+id/view"
+        android:layout_marginStart="@dimen/dimen_24"
+        android:layout_marginEnd="@dimen/dimen_24"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:text="杨树宇在北京朝阳区上班，你在哪那 哟啊不要换一份工作 来找他一起上班啊"
+        android:textColor="#666666"
+        android:textSize="@dimen/dimen_26" />
+
+    <CheckBox
+        android:id="@+id/cb_shipping_select"
+        android:layout_width="@dimen/dimen_28"
+        android:layout_height="@dimen/dimen_28"
+        android:layout_below="@+id/jtv_shipping_detailed"
+        android:layout_marginStart="@dimen/dimen_24"
+        android:layout_marginTop="@dimen/dimen_20"
+        android:background="@drawable/selector_shipping_checkbox"
+        android:button="@null" />
+
+    <TextView
+        android:id="@+id/tv_shipping_select"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/jtv_shipping_detailed"
+        android:layout_marginStart="@dimen/dimen_8"
+        android:layout_marginTop="@dimen/dimen_20"
+        android:layout_toEndOf="@+id/cb_shipping_select"
+        android:text="@string/defaultaddress"
+        android:textColor="@color/ff9c05"
+        android:textSize="@dimen/dimen_24" />
+
+    <TextView
+        android:id="@+id/tv_shipping_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dimen_48"
+        android:gravity="center"
+        android:layout_marginTop="-6dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/tv_shipping_select"
+        android:layout_marginEnd="@dimen/dimen_24"
+        android:drawableStart="@drawable/default_delete"
+        android:drawablePadding="@dimen/dimen_8"
+        android:text="@string/delete"
+        android:textColor="#999999"
+        android:textSize="@dimen/dimen_24" />
+
+    <View
+        android:layout_width="@dimen/dimen_1"
+        android:layout_height="@dimen/dimen_32"
+        android:layout_alignTop="@+id/cb_shipping_select"
+        android:layout_marginBottom="@dimen/dimen_30"
+        android:layout_marginEnd="@dimen/dimen_36"
+        android:layout_marginTop="-4dp"
+        android:layout_toStartOf="@+id/tv_shipping_delete"
+        android:background="#999999"></View>
+
+    <TextView
+        android:gravity="center"
+        android:id="@+id/tv_shipping_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dimen_48"
+        android:layout_alignTop="@+id/tv_shipping_select"
+        android:layout_marginTop="-6dp"
+        android:layout_marginEnd="@dimen/dimen_72"
+        android:layout_toStartOf="@+id/tv_shipping_delete"
+        android:drawableStart="@drawable/default_edit"
+        android:drawablePadding="@dimen/dimen_8"
+        android:text="@string/edit"
+        android:textColor="#999999"
+        android:textSize="@dimen/dimen_24" />
+
+</RelativeLayout>

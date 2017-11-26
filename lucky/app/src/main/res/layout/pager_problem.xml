@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/rl_problem_header"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_128"
+        android:background="@drawable/shape_header">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dimen_60"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/dimen_18"
+            android:layout_marginTop="@dimen/dimen_52"
+            android:gravity="center"
+            android:text="@string/Problem"
+            android:textColor="@color/text_white"
+            android:textSize="@dimen/dimen_36" />
+
+        <TextView
+            android:id="@+id/tv_problem"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dimen_36"
+            android:layout_alignParentEnd="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/dimen_24"
+            android:layout_marginEnd="@dimen/dimen_24"
+            android:layout_marginTop="@dimen/dimen_66"
+            android:gravity="center"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/dimen_28" />
+
+        <RelativeLayout
+            android:id="@+id/rl_problem_return"
+            android:layout_width="@dimen/dimen_80"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/iv_problem_back"
+                android:layout_width="@dimen/dimen_24"
+                android:layout_marginTop="@dimen/dimen_60"
+                android:layout_height="@dimen/dimen_42"
+                android:layout_marginStart="@dimen/dimen_24"
+                android:background="@drawable/go_back" />
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_problem"
+        android:layout_below="@+id/rl_problem_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></android.support.v7.widget.RecyclerView>
+
+</RelativeLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#ffffff"
+    android:orientation="horizontal"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_width="@dimen/dimen_64"
+        android:layout_height="match_parent">
+        <View
+            android:id="@+id/view_dispatch_top"
+            android:layout_width="@dimen/dimen_1"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_36"
+            android:background="@drawable/selector_dispatch_view"></View>
+
+        <ImageView
+            android:id="@+id/iv_disaptch_delivered"
+            android:layout_width="@dimen/dimen_24"
+            android:layout_height="@dimen/dimen_24"
+            android:layout_marginLeft="@dimen/dimen_24"
+            android:layout_marginTop="@dimen/dimen_5"
+            android:background="@drawable/selector_dispatch_point" />
+
+        <View
+            android:layout_below="@+id/iv_disaptch_delivered"
+            android:id="@+id/view_delivered"
+            android:layout_width="@dimen/dimen_1"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_36"
+            android:background="@drawable/selector_dispatch_view"></View>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_toRightOf="@+id/rl"
+        android:id="@+id/rl_delivered"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/rl_disaptch"
+            android:layout_marginRight="@dimen/dimen_24"
+            android:layout_alignLeft="@+id/tv_dispatch_delivered"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

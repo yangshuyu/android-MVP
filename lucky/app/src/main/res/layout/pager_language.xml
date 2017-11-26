@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_language_header"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_128"
+        android:background="@drawable/shape_header">
+
+        <TextView
+            android:id="@+id/tv_set_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/dimen_16"
+            android:layout_marginTop="@dimen/dimen_52"
+            android:gravity="center"
+            android:text="@string/SelectLanguage"
+            android:textColor="@color/text_white"
+            android:textSize="@dimen/dimen_38" />
+
+        <RelativeLayout
+            android:id="@+id/rl_language_back"
+            android:layout_width="@dimen/dimen_80"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/iv_set_back"
+                android:layout_width="@dimen/dimen_24"
+                android:layout_height="@dimen/dimen_42"
+                android:layout_marginBottom="@dimen/dimen_24"
+                android:layout_marginStart="@dimen/dimen_24"
+                android:layout_marginTop="@dimen/dimen_62"
+                android:background="@drawable/go_back" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_language_english"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_language_header"
+        android:background="#ffffff">
+
+        <TextView
+            android:id="@+id/tv_english"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dimen_32"
+            android:layout_marginStart="@dimen/dimen_40"
+            android:layout_marginTop="@dimen/dimen_30"
+            android:gravity="center"
+            android:text="English"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/dimen_32" />
+
+        <ImageView
+            android:id="@+id/iv_language_english"
+            android:layout_width="@dimen/dimen_36"
+            android:layout_height="@dimen/dimen_25"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/tv_english"
+            android:layout_marginRight="@dimen/dimen_24"
+            android:layout_marginTop="@dimen/dimen_5"
+            android:background="@drawable/buycoins_true"
+            android:visibility="invisible" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rl_language_chinese"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_language_english"
+        android:background="#ffffff">
+
+        <View
+            android:layout_width="match_parent"
+            android:background="@color/bg_view"
+            android:layout_height="@dimen/dimen_1"></View>
+        <TextView
+            android:id="@+id/tv_chinese"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dimen_32"
+            android:layout_marginStart="@dimen/dimen_40"
+            android:layout_marginTop="@dimen/dimen_30"
+            android:gravity="center"
+            android:text="中文"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/dimen_32" />
+
+        <ImageView
+            android:id="@+id/iv_language_chinese"
+            android:layout_width="@dimen/dimen_36"
+            android:layout_height="@dimen/dimen_25"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/tv_chinese"
+            android:layout_marginRight="@dimen/dimen_24"
+            android:layout_marginTop="@dimen/dimen_5"
+            android:background="@drawable/buycoins_true"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_language_Malay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_language_chinese"
+        android:background="#ffffff">
+
+        <View
+            android:layout_width="match_parent"
+            android:background="@color/bg_view"
+            android:layout_height="@dimen/dimen_1"></View>
+        <TextView
+            android:id="@+id/tv_Malay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dimen_32"
+            android:layout_marginStart="@dimen/dimen_40"
+            android:layout_marginTop="@dimen/dimen_30"
+            android:gravity="center"
+            android:text="Bahasa malaysia"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/dimen_32" />
+
+        <ImageView
+            android:id="@+id/iv_language_Malay"
+            android:layout_width="@dimen/dimen_36"
+            android:layout_height="@dimen/dimen_25"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/tv_Malay"
+            android:layout_marginRight="@dimen/dimen_24"
+            android:layout_marginTop="@dimen/dimen_5"
+            android:background="@drawable/buycoins_true"
+            android:visibility="invisible" />
+    </RelativeLayout>
+</RelativeLayout>

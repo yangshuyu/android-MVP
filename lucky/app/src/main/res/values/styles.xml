@@ -1,0 +1,52 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:listDivider">@drawable/shape_divider</item>
+    </style>
+
+    <declare-styleable name="refreshableView">
+        <attr name="interceptAllMoveEvents" format="boolean" />
+    </declare-styleable>
+
+    <attr name="borderRadius" format="dimension" />
+    <attr name="type">
+        <enum name="circle" value="0" />
+        <enum name="round" value="1" />
+    </attr>
+    <declare-styleable name="RoundCornerImageView">
+        <attr name="borderRadius" />
+        <attr name="type" />
+    </declare-styleable>
+
+    <style name="MyLockTheme" parent="Lock.Theme">
+
+        <item name="Auth0.HeaderTitle">@string/LuckyBuyer</item>
+        <item name="Auth0.HeaderTitleColor">@color/text_black</item>
+        <item name="Auth0.HeaderLogo">@mipmap/ic_launcher</item>
+        <item name="Auth0.HeaderBackground">@color/auth0_header</item>
+        <item name="Auth0.DarkPrimaryColor">@color/text_black</item>
+        <item name="Auth0.PrimaryColor">@color/bg_ff4f3c</item>
+    </style>
+
+    <style name="Theme.PayssionTrans" parent="Theme.AppCompat.Light">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <style name="popwin_anim_style">
+        <item name="android:windowEnterAnimation">@anim/ppwshow</item>
+        <item name="android:windowExitAnimation">@anim/ppwhide</item>
+    </style>
+
+    　　
+</resources>

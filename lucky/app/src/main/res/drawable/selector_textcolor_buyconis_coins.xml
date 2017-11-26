@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_hovered="true" android:drawable="@drawable/me_lucky">
+
+    </item>
+    <item android:state_hovered="false" android:drawable="@drawable/civ_shape">
+
+    </item>
+    <!--<item android:state_hovered="true">-->
+        <!--<shape>-->
+            <!--<solid android:color="#ffffff"></solid>-->
+        <!--</shape>-->
+    <!--</item>-->
+    <!--<item android:state_hovered="false">-->
+        <!--<shape>-->
+            <!--<solid android:color="#cccccc"></solid>-->
+        <!--</shape>-->
+    <!--</item>-->
+</selector>

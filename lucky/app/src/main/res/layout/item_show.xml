@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="top"
+    android:background="#ffffff">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_24"
+        android:background="#f2f2f2"></RelativeLayout>
+
+    <net.iwantbuyer.view.RoundCornerImageView
+        android:id="@+id/riv_show_head"
+        android:layout_width="@dimen/dimen_46"
+        android:layout_height="@dimen/dimen_46"
+        android:layout_marginLeft="@dimen/dimen_24"
+        android:layout_marginTop="@dimen/dimen_50"
+        android:src="@drawable/default_icon" />
+
+    <TextView
+        android:id="@+id/tv_show_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_24"
+        android:layout_marginTop="@dimen/dimen_57"
+        android:layout_toRightOf="@id/riv_show_head"
+        android:text="Nicholas Price"
+        android:textColor="#323232"
+        android:textSize="@dimen/dimen_30" />
+
+    <TextView
+        android:id="@+id/tv_show_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="top"
+        android:layout_marginRight="@dimen/dimen_24"
+        android:layout_marginTop="@dimen/dimen_62"
+        android:text="2016-11-28  15:31"
+        android:textColor="#969696"
+        android:textSize="@dimen/dimen_22" />
+
+    <TextView
+        android:id="@+id/tv_show_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_24"
+        android:layout_marginRight="@dimen/dimen_24"
+        android:layout_marginTop="@dimen/dimen_128"
+        android:paddingBottom="@dimen/dimen_4"
+        android:paddingTop="@dimen/dimen_4"
+        android:text="@string/money100to115"
+        android:textColor="#323232"
+        android:textSize="@dimen/dimen_28" />
+
+    <ImageView
+        android:id="@+id/iv_show_one"
+        android:layout_width="@dimen/dimen_210"
+        android:layout_height="@dimen/dimen_210"
+        android:layout_below="@+id/tv_show_title"
+        android:layout_marginBottom="@dimen/dimen_29"
+        android:layout_marginLeft="@dimen/dimen_24"
+        android:layout_marginTop="@dimen/dimen_9"
+        android:background="@drawable/default_icon" />
+
+    <ImageView
+        android:id="@+id/iv_show_two"
+        android:layout_width="@dimen/dimen_210"
+        android:layout_height="@dimen/dimen_210"
+        android:layout_below="@+id/tv_show_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="@dimen/dimen_24"
+        android:layout_marginTop="@dimen/dimen_9"
+        android:background="@drawable/default_icon" />
+
+    <ImageView
+        android:id="@+id/iv_show_three"
+        android:layout_width="@dimen/dimen_210"
+        android:layout_height="@dimen/dimen_210"
+        android:layout_alignRight="@+id/tv_show_time"
+        android:layout_below="@+id/tv_show_title"
+        android:layout_marginTop="@dimen/dimen_9"
+        android:background="@drawable/default_icon" />
+
+    <RelativeLayout
+        android:id="@+id/rl_show_information"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_show_one"
+        android:layout_marginLeft="@dimen/dimen_24"
+        android:layout_marginRight="@dimen/dimen_24"
+        android:background="@drawable/shape_show_6">
+
+        <TextView
+            android:id="@+id/tv_show_information"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_25"
+            android:paddingRight="@dimen/dimen_24"
+            android:maxLines="2"
+            android:paddingLeft="@dimen/dimen_24"
+            android:text="Product Information: Huawei P8 Lite Dual Sim - 16GB,4G LTE,Wifi,Gold"
+            android:textColor="#999999"
+            android:textSize="@dimen/dimen_24" />
+
+        <TextView
+            android:id="@+id/tv_round"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_show_information"
+            android:layout_marginTop="@dimen/dimen_10"
+            android:maxLines="2"
+            android:paddingLeft="@dimen/dimen_24"
+            android:text="@string/Issue."
+            android:textColor="#999999"
+            android:textSize="@dimen/dimen_24" />
+
+        <TextView
+            android:id="@+id/tv_show_round"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_show_information"
+            android:layout_marginTop="@dimen/dimen_10"
+            android:maxLines="2"
+            android:layout_toRightOf="@+id/tv_round"
+            android:text="@string/Issue."
+            android:layout_marginBottom="@dimen/dimen_24"
+            android:textColor="#999999"
+            android:textSize="@dimen/dimen_24" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_below="@+id/rl_show_information"
+        android:layout_width="match_parent"
+        android:background="#ffffff"
+        android:layout_height="@dimen/dimen_24"></RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,711 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:auto3d="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/rl_productdetail_allview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/srl_productdetail_refresh"
+            android:layout_width="match_parent"
+            android:layout_above="@+id/rl_productdetail_indsertcoins"
+            android:layout_height="wrap_content">
+
+            <net.iwantbuyer.view.MyScrollView
+                android:id="@+id/sv_productdetail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/ll_productdetail"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:background="#FFFFFF"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <android.support.v4.view.ViewPager
+                            android:id="@+id/vp_productdetail"
+                            android:layout_width="match_parent"
+                            android:layout_marginTop="-1px"
+                            android:layout_height="@dimen/dimen_663"></android.support.v4.view.ViewPager>
+                        <LinearLayout
+                            android:background="#ffffff"
+                            android:layout_below="@+id/vp_productdetail"
+                            android:id="@+id/ll_productdetail_point"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/dimen_16"
+                            android:layout_alignBottom="@+id/vp_home"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="@dimen/dimen_20"
+                            android:gravity="center"
+                            android:orientation="horizontal"></LinearLayout>
+
+                        <!--<ImageView-->
+                            <!--android:id="@+id/iv_productdetail_image"-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="@dimen/dimen_660"-->
+                            <!--android:adjustViewBounds="true"-->
+                            <!--android:background="@drawable/productdetail_defaulticon"-->
+                            <!--android:scaleType="fitXY" />-->
+
+                        <View
+                            android:id="@+id/view"
+                            android:layout_width="match_parent"
+                            android:layout_height="1px"
+                            android:layout_below="@+id/vp_productdetail"
+                            android:background="@color/bg_view"></View>
+
+
+                        <ImageView
+                            android:id="@+id/iv_productdetail_number"
+                            android:layout_width="@dimen/dimen_155"
+                            android:layout_height="@dimen/dimen_40"
+                            android:layout_above="@+id/view"
+                            android:layout_marginBottom="@dimen/dimen_100" />
+
+                        <net.iwantbuyer.view.AutoTextView
+                            android:id="@+id/atv_productdetail_broadcast"
+                            android:layout_width="@dimen/dimen_680"
+                            android:layout_height="@dimen/dimen_94"
+                            android:layout_above="@+id/view"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:foregroundGravity="center"
+                            android:padding="@dimen/dimen_10"
+                            android:visibility="gone"
+                            auto3d:textSize="@dimen/dimen_11" />
+
+                        <TextView
+                            android:id="@+id/tv_productdetail_producttitle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/ll_productdetail_point"
+                            android:layout_marginEnd="@dimen/dimen_24"
+                            android:layout_marginStart="@dimen/dimen_24"
+                            android:layout_marginTop="@dimen/dimen_25"
+                            android:ellipsize="end"
+                            android:maxLines="2"
+                            android:text="Magic sound headphones second generation"
+                            android:textColor="@color/text_black"
+                            android:textSize="@dimen/dimen_32" />
+
+                        <TextView
+                            android:id="@+id/tv_productdetail_discribe"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tv_productdetail_producttitle"
+                            android:layout_marginEnd="@dimen/dimen_24"
+                            android:layout_marginStart="@dimen/dimen_24"
+                            android:layout_marginTop="@dimen/dimen_14"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:text="Play 1 coin, get one chance! And now shipping free！"
+                            android:textColor="#999999"
+                            android:textSize="@dimen/dimen_28" />
+
+                        <!--倒计时-->
+                        <RelativeLayout
+                            android:id="@+id/rl_productdetail_countdown"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/dimen_112"
+                            android:layout_below="@id/tv_productdetail_discribe"
+                            android:layout_marginBottom="@dimen/dimen_20"
+                            android:layout_marginEnd="@dimen/dimen_24"
+                            android:layout_marginStart="@dimen/dimen_24"
+                            android:layout_marginTop="@dimen/dimen_40"
+                            android:background="@color/ff9c05"
+                            android:visibility="gone">
+
+                            <TextView
+                                android:id="@+id/tv_countdownissue"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/dimen_20"
+                                android:layout_marginTop="@dimen/dimen_16"
+                                android:gravity="center"
+                                android:text="@string/Issue."
+                                android:textColor="@color/text_white"
+                                android:textSize="@dimen/dimen_28" />
+
+                            <TextView
+                                android:id="@+id/tv_productdetail_countdownissue"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/dimen_16"
+                                android:layout_toEndOf="@+id/tv_countdownissue"
+                                android:gravity="center"
+                                android:text="2"
+                                android:textColor="@color/text_white"
+                                android:textSize="@dimen/dimen_28" />
+
+                            <TextView
+                                android:id="@+id/tv_productdetail_announced"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/dimen_20"
+                                android:layout_marginTop="@dimen/dimen_61"
+                                android:text="@string/Countdownannounced."
+                                android:textColor="@color/text_white"
+                                android:textSize="@dimen/dimen_28" />
+
+                            <TextView
+                                android:id="@+id/tv_countdown_1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/dimen_55"
+                                android:layout_toEndOf="@+id/tv_productdetail_announced"
+                                android:text="0"
+                                android:textColor="@color/text_white"
+                                android:textSize="@dimen/dimen_36"
+                                android:textStyle="bold" />
+
+
+                            <TextView
+                                android:id="@+id/tv_countdown_2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/dimen_2"
+                                android:layout_marginTop="@dimen/dimen_55"
+                                android:layout_toEndOf="@+id/tv_countdown_1"
+                                android:text="0"
+                                android:textColor="@color/text_white"
+                                android:textSize="@dimen/dimen_36"
+                                android:textStyle="bold" />
+
+                            <RelativeLayout
+                                android:layout_width="@dimen/dimen_6"
+                                android:layout_height="@dimen/dimen_20"
+                                android:layout_alignTop="@id/tv_countdown_2"
+                                android:layout_marginStart="@dimen/dimen_6"
+                                android:layout_marginTop="@dimen/dimen_16"
+                                android:layout_toEndOf="@+id/tv_countdown_2">
+
+                                <ImageView
+                                    android:layout_width="@dimen/dimen_6"
+                                    android:layout_height="@dimen/dimen_6"
+                                    android:background="@drawable/shape_iv_all_time_whitepoint" />
+
+                                <ImageView
+                                    android:layout_width="@dimen/dimen_6"
+                                    android:layout_height="@dimen/dimen_6"
+                                    android:layout_alignParentBottom="true"
+                                    android:background="@drawable/shape_iv_all_time_whitepoint" />
+                            </RelativeLayout>
+
+                            <TextView
+                                android:id="@+id/tv_countdown_3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/dimen_20"
+                                android:layout_marginTop="@dimen/dimen_55"
+                                android:layout_toEndOf="@+id/tv_countdown_2"
+                                android:text="0"
+                                android:textColor="@color/text_white"
+                                android:textSize="@dimen/dimen_36"
+                                android:textStyle="bold" />
+
+
+                            <TextView
+                                android:id="@+id/tv_countdown_4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/dimen_3"
+                                android:layout_marginTop="@dimen/dimen_55"
+                                android:layout_toEndOf="@id/tv_countdown_3"
+                                android:text="0"
+                                android:textColor="@color/text_white"
+                                android:textSize="@dimen/dimen_36"
+                                android:textStyle="bold" />
+
+                            <RelativeLayout
+                                android:layout_width="@dimen/dimen_6"
+                                android:layout_height="@dimen/dimen_20"
+                                android:layout_alignTop="@id/tv_countdown_4"
+                                android:layout_marginStart="@dimen/dimen_6"
+                                android:layout_marginTop="@dimen/dimen_16"
+                                android:layout_toEndOf="@+id/tv_countdown_4">
+
+                                <ImageView
+                                    android:layout_width="@dimen/dimen_6"
+                                    android:layout_height="@dimen/dimen_6"
+                                    android:background="@drawable/shape_iv_all_time_whitepoint" />
+
+                                <ImageView
+                                    android:layout_width="@dimen/dimen_6"
+                                    android:layout_height="@dimen/dimen_6"
+                                    android:layout_alignParentBottom="true"
+                                    android:background="@drawable/shape_iv_all_time_whitepoint" />
+                            </RelativeLayout>
+
+
+                            <TextView
+                                android:id="@+id/tv_countdown_5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/dimen_20"
+                                android:layout_marginTop="@dimen/dimen_55"
+                                android:layout_toEndOf="@id/tv_countdown_4"
+                                android:text="0"
+                                android:textColor="@color/text_white"
+                                android:textSize="@dimen/dimen_36"
+                                android:textStyle="bold"></TextView>
+
+
+                            <TextView
+                                android:id="@+id/tv_countdown_6"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/dimen_3"
+                                android:layout_marginTop="@dimen/dimen_55"
+                                android:layout_toEndOf="@id/tv_countdown_5"
+                                android:text="0"
+                                android:textColor="@color/text_white"
+                                android:textSize="@dimen/dimen_36"
+                                android:textStyle="bold" />
+
+                        </RelativeLayout>
+
+
+                        <TextView
+                            android:id="@+id/tv_productdetail_inprogress"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/dimen_40"
+                            android:layout_alignParentEnd="true"
+                            android:layout_below="@+id/tv_productdetail_discribe"
+                            android:layout_marginBottom="@dimen/dimen_20"
+                            android:layout_marginEnd="@dimen/dimen_24"
+                            android:layout_marginTop="@dimen/dimen_25"
+                            android:gravity="center"
+                            android:paddingEnd="@dimen/dimen_4"
+                            android:paddingStart="@dimen/dimen_4"
+                            android:text="@string/Inprogress"
+                            android:textColor="#666666"
+                            android:textSize="@dimen/dimen_26" />
+
+                        <TextView
+                            android:id="@+id/tv_issue"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/dimen_40"
+                            android:layout_below="@+id/tv_productdetail_discribe"
+                            android:layout_marginBottom="@dimen/dimen_20"
+                            android:layout_marginStart="@dimen/dimen_24"
+                            android:layout_marginTop="@dimen/dimen_25"
+                            android:text="@string/Issue."
+                            android:textColor="#666666"
+                            android:textSize="@dimen/dimen_28" />
+
+                        <TextView
+                            android:id="@+id/tv_productdetail_issue"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/dimen_40"
+                            android:layout_below="@+id/tv_productdetail_discribe"
+                            android:layout_marginBottom="@dimen/dimen_20"
+                            android:layout_marginTop="@dimen/dimen_25"
+                            android:layout_toEndOf="@+id/tv_issue"
+                            android:text="171754"
+                            android:textColor="#666666"
+                            android:textSize="@dimen/dimen_28" />
+
+                        <ProgressBar
+                            android:id="@+id/pb_productdetail_progress"
+                            style="?android:attr/progressBarStyleHorizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/dimen_14"
+                            android:layout_below="@+id/tv_productdetail_inprogress"
+                            android:layout_marginBottom="@dimen/dimen_20"
+                            android:layout_marginEnd="@dimen/dimen_24"
+                            android:layout_marginStart="@dimen/dimen_24"
+                            android:layout_marginTop="@dimen/dimen_4"
+                            android:indeterminate="false"
+                            android:progressDrawable="@drawable/homenew_product_progress" />
+
+                        <TextView
+                            android:id="@+id/tv_productdetail_total"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/dimen_32"
+                            android:layout_below="@+id/pb_productdetail_progress"
+                            android:layout_marginBottom="@dimen/dimen_40"
+                            android:layout_marginStart="@dimen/dimen_24"
+                            android:text="@string/Total."
+                            android:textColor="#999999"
+                            android:textSize="@dimen/dimen_24" />
+
+                        <TextView
+                            android:id="@+id/tv_productdetail_totalicon"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/dimen_32"
+                            android:layout_below="@+id/pb_productdetail_progress"
+                            android:layout_marginBottom="@dimen/dimen_40"
+                            android:layout_toEndOf="@+id/tv_productdetail_total"
+                            android:text="1280"
+                            android:textColor="@color/ff9c05"
+                            android:textSize="@dimen/dimen_24" />
+
+                        <TextView
+
+                            android:id="@+id/tv_productdetail_percent"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/dimen_32"
+                            android:layout_below="@+id/pb_productdetail_progress"
+                            android:layout_marginBottom="@dimen/dimen_40"
+                            android:layout_marginStart="@dimen/dimen_280"
+                            android:text="@string/Claimed."
+                            android:textColor="#999999"
+                            android:textSize="@dimen/dimen_24" />
+
+                        <TextView
+                            android:id="@+id/tv_productdetail_percentage"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/dimen_32"
+                            android:layout_below="@+id/pb_productdetail_progress"
+                            android:layout_marginBottom="@dimen/dimen_40"
+                            android:layout_toEndOf="@+id/tv_productdetail_percent"
+                            android:text="50%"
+                            android:textColor="@color/ff9c05"
+                            android:textSize="@dimen/dimen_24" />
+
+                        <TextView
+                            android:id="@+id/tv_productdetail_icon"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/dimen_32"
+                            android:layout_alignParentEnd="true"
+                            android:layout_below="@+id/pb_productdetail_progress"
+                            android:layout_marginEnd="@dimen/dimen_24"
+                            android:text="8822"
+                            android:textColor="@color/ff9c05"
+                            android:textSize="@dimen/dimen_24" />
+
+                        <TextView
+                            android:id="@+id/tv_productdetail_remain"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/dimen_32"
+                            android:layout_below="@+id/pb_productdetail_progress"
+                            android:layout_toStartOf="@id/tv_productdetail_icon"
+                            android:text="@string/Remaining."
+                            android:textColor="#999999"
+                            android:textSize="@dimen/dimen_24" />
+
+                    </RelativeLayout>
+
+
+                    <include
+                        android:id="@+id/rl_productdetail_lucky"
+                        layout="@layout/include"></include>
+
+
+                    <include
+                        android:id="@+id/rl_productdetail_mybuy"
+                        layout="@layout/pager_productdetail_mybuy"></include>
+
+                    //防止使用 margintop出现空白区域
+
+                    <RelativeLayout
+                        android:id="@+id/rl_productdetail_announced"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dimen_120"
+                        android:background="@color/bg_while">
+
+                        <RelativeLayout
+                            android:id="@+id/rl_announced"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/dimen_20"
+                            android:background="#EEEEEE"></RelativeLayout>
+
+                        <ImageView
+                            android:layout_width="@dimen/dimen_24"
+                            android:layout_height="@dimen/dimen_22"
+                            android:layout_marginStart="@dimen/dimen_24"
+                            android:layout_marginTop="@dimen/dimen_55"
+                            android:background="@drawable/productdetail_previous" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/dimen_44"
+                            android:layout_marginStart="@dimen/dimen_68"
+                            android:layout_marginTop="@dimen/dimen_50"
+                            android:text="@string/PreviousWinners"
+                            android:textColor="#666666"
+                            android:textSize="@dimen/dimen_32" />
+
+                        <ImageView
+                            android:layout_width="@dimen/dimen_12"
+                            android:layout_height="@dimen/dimen_22"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginEnd="@dimen/dimen_24"
+                            android:layout_marginTop="@dimen/dimen_55"
+                            android:background="@drawable/go_go" />
+                    </RelativeLayout>
+                    //防止使用 margintop出现空白区域
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dimen_20"
+                        android:background="#EEEEEE"></RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rl_productdetail_show"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dimen_100"
+                        android:background="@color/bg_while">
+
+                        <ImageView
+                            android:layout_width="@dimen/dimen_24"
+                            android:layout_height="@dimen/dimen_22"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="@dimen/dimen_24"
+                            android:background="@drawable/productdetail_show" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/dimen_44"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="@dimen/dimen_68"
+                            android:text="@string/Show"
+                            android:textColor="#666666"
+                            android:textSize="@dimen/dimen_32" />
+
+                        <ImageView
+                            android:layout_width="@dimen/dimen_12"
+                            android:layout_height="@dimen/dimen_22"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginEnd="@dimen/dimen_24"
+                            android:background="@drawable/go_go" />
+                    </RelativeLayout>
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/rv_productdetail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <!--上啦加载-->
+                    <LinearLayout
+                        android:id="@+id/ll_loading_data"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dimen_100"
+                        android:layout_below="@+id/rv_productdetail"
+                        android:layout_marginBottom="@dimen/dimen_100"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <ProgressBar
+                            android:id="@+id/pb_loading_data"
+                            android:layout_width="@dimen/dimen_40"
+                            android:layout_height="@dimen/dimen_40"
+                            android:indeterminateDrawable="@drawable/pb_loading_data" />
+
+                        <TextView
+                            android:id="@+id/tv_loading_data"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/dimen_16"
+                            android:text="@string/loading..."
+                            android:textSize="@dimen/dimen_26" />
+                    </LinearLayout>
+                </LinearLayout>
+            </net.iwantbuyer.view.MyScrollView>
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rl_productdetail_indsertcoins"
+                android:layout_width="match_parent"
+                android:layout_above="@+id/ll_productdetail_buyit"
+                android:layout_height="@dimen/dimen_100"
+                android:layout_alignParentBottom="true"
+                android:background="#ddff311a">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dimen_44"
+                    android:layout_centerInParent="true"
+                    android:text="@string/GetItNow"
+                    android:textColor="#ffffff"
+                    android:textSize="@dimen/dimen_32" />
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/ll_productdetail_buyit"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_100"
+                android:layout_alignParentBottom="true"
+                android:background="#ffffff">
+
+                <TextView
+                    android:id="@+id/tv_productdetail_sold_discribe"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="@dimen/dimen_24"
+                    android:layout_weight="3"
+                    android:background="#ffffff"
+                    android:gravity="center_vertical"
+                    android:text="@string/Thelatestissue"
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/dimen_32" />
+
+                <TextView
+                    android:id="@+id/tv_productdetal_again"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="@dimen/dimen_24"
+                    android:layout_weight="2"
+                    android:background="#ff0000"
+                    android:gravity="center"
+                    android:text="@string/GetItNow"
+                    android:textColor="@color/text_white"
+                    android:textSize="@dimen/dimen_32" />
+            </LinearLayout>
+
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_3"
+            android:layout_above="@+id/rl_bottom"
+            android:background="@drawable/default_shadow_bottom" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_keepout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rl_home_header"
+        android:background="@color/f2f2f2">
+
+        <RelativeLayout
+            android:id="@+id/rl_loading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+            <ProgressBar
+                android:id="@+id/pb_loading"
+                android:layout_width="@dimen/dimen_60"
+                android:layout_height="@dimen/dimen_60"
+                android:indeterminateDrawable="@drawable/shape_loading" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/dimen_8"
+                android:layout_toEndOf="@+id/pb_loading"
+                android:text="@string/loading..."
+                android:textColor="#000000"
+                android:textSize="@dimen/dimen_32" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_neterror"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dimen_160"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/iv_neterror"
+                android:layout_width="@dimen/dimen_400"
+                android:layout_height="@dimen/dimen_420"
+                android:background="@drawable/default_neterror" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_neterror"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/dimen_16"
+                android:text="@string/Networkfailure"
+                android:textColor="#acabb4"
+                android:textSize="@dimen/dimen_28" />
+
+            <TextView
+                android:id="@+id/tv_net_again"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_neterror"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/dimen_80"
+                android:background="@drawable/shape_radius_4pxoragne"
+                android:paddingBottom="@dimen/dimen_12"
+                android:paddingEnd="@dimen/dimen_24"
+                android:paddingStart="@dimen/dimen_24"
+                android:paddingTop="@dimen/dimen_12"
+                android:text="@string/retry"
+                android:textColor="@color/text_white"
+                android:textSize="@dimen/dimen_32" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/rl_nodata"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dimen_240"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/iv_nodata"
+                android:layout_width="@dimen/dimen_250"
+                android:layout_height="@dimen/dimen_300"
+                android:layout_marginStart="@dimen/dimen_40"
+                android:background="@drawable/default_nodata" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_nodata"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/dimen_16"
+                android:text="@string/Nodata"
+                android:textColor="#acabb4"
+                android:textSize="@dimen/dimen_28" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <!--后加的标题 原先用的是secondPagerActivity的标题-->
+    <RelativeLayout
+        android:id="@+id/rl_productdetail_header"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_130"
+        android:background="#00ffffff">
+
+        <RelativeLayout
+            android:id="@+id/rl_productdetail_back"
+            android:layout_width="@dimen/dimen_138"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/iv_productdetail_back"
+                android:layout_width="@dimen/dimen_56"
+                android:layout_height="@dimen/dimen_56"
+                android:layout_marginStart="@dimen/dimen_24"
+                android:layout_marginTop="@dimen/dimen_55"
+                android:background="@drawable/productdetail_return" />
+
+        </RelativeLayout>
+
+        <!--<ImageView-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:background="@drawable/default_shadow_top"-->
+        <!--android:layout_height="@dimen/dimen_3" />-->
+    </RelativeLayout>
+
+</RelativeLayout>
